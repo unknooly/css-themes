@@ -1,0 +1,189 @@
+/* ==UserStyle==
+@name           Twitter Pink
+@description    Pink theme for Twitter
+@version        1.0.0
+@author         unknooly
+@namespace      https://github.com/unknooly/custom-css
+@homepageURL    https://github.com/unknooly/custom-css
+@updateURL      https://raw.githubusercontent.com/unknooly/custom-css/main/twitterpink.user.css
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+
+.css-1dbjc4n.r-kuekak.r-109y4c4.r-1p6iasa{
+    /* removes extra border (own element) below "What's happening?"/create tweet */
+    display: none;
+}
+
+/* Adds bottom line for "What's Happening" div (1dim 1def) */
+/* obs.: if edited the superior div, it will affect all displays */
+.css-1dbjc4n.r-yfoy6g.r-oyd9sg{
+    padding: 4px 0 8px 0;
+    border-bottom: 1px solid #38444d;
+}   
+.css-1dbjc4n.r-14lw9ot.r-oyd9sg{
+    border-bottom: 1px solid #ebeef0;
+}
+.css-1dbjc4n.r-kemksi.r-oyd9sg{
+    border-bottom: 1px solid #2f3336;
+}
+
+.css-1dbjc4n.r-yfoy6g.r-oyd9sg,
+.css-1dbjc4n.r-1ila09b.r-qklmqi.r-1adg3ll.r-1ny4l3l,
+.r-18bvks7,
+.r-1kfrmmb,
+nav.css-1dbjc4n.r-1awozwy.r-1ila09b.r-rull8r.r-qklmqi.r-18u37iz,
+.css-1dbjc4n.r-yfoy6g.r-wrkyx5.r-sdzlij.r-1phboty.r-rs99b7.r-18u37iz.r-ero68b.r-1udh08x.r-1udbk01{
+    /* borders: create tweet, timeline tweets, [quote rt, timeline sides], tweet page (small lines), profile, topics button */
+    border-color: #2e2e2e;
+}
+
+.css-1dbjc4n.r-1e5uvyk.r-ii8lfi.r-1h3ijdo{
+    /* latest tweets/home header */
+    border-bottom: 1px solid #2e2e2e;
+    background-color: rgba(24,24,24,0.75);
+}
+
+.r-ii8lfi{
+    /* header for secondary pages (trending and stuff) */
+    background-color: #181818;
+}
+
+.r-hjejmn{
+    /* thread/replies lines */
+    background-color: #2e2e2e;
+}
+
+body{
+    /* sidebars bg */
+    background-color: #181818 !important;
+}
+
+.r-yfoy6g{
+    /* timeline and search bar bg */
+    background-color: #181818;
+}
+
+.r-aaos50{
+    /* the actual search bar bg */
+    background-color: #202020;
+}
+
+
+.css-4rbku5.css-18t94o4.css-1dbjc4n.r-8g4rmw.r-42olwf.r-sdzlij.r-1phboty.r-rs99b7.r-1waj6vr.r-1loqt21.r-19yznuf.r-64el8z.r-1ny4l3l.r-1dye5f7.r-o7ynqc.r-6416eg.r-lrvibr{
+    /* "Tweet" button ::hover */
+    background-color: #d659de !important;
+    box-shadow: 0 0 2px 1px #6b2c6f;
+}
+
+a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-sdzlij.r-1phboty.r-rs99b7.r-1waj6vr.r-1loqt21.r-19yznuf.r-64el8z.r-1ny4l3l.r-1dye5f7.r-o7ynqc.r-6416eg.r-lrvibr,
+a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-168457u.r-42olwf.r-sdzlij.r-1phboty.r-rs99b7.r-1waj6vr.r-1loqt21.r-19yznuf.r-64el8z.r-1ny4l3l.r-1dye5f7.r-o7ynqc.r-6416eg.r-lrvibr{
+    /* "Tweet" button */
+    background-color: #e699eb !important;
+    transition: none;
+}
+
+svg.r-jwli3a.r-4qtqp9.r-yyyyoo.r-lwhw9o.r-dnmrzs.r-bnwqim.r-1plcrui.r-lrvibr,
+svg.r-jwli3a.r-4qtqp9.r-yyyyoo.r-z80fyv.r-dnmrzs.r-bnwqim.r-1plcrui.r-lrvibr.r-19wmn03{
+    /* svg left bar icons, svg menu (home/latest) */
+    fill: #e699eb;
+}
+
+.r-icoktb{
+    /* "Tweet" small button fix */
+    opacity: 1;
+}
+
+.css-901oao.r-1awozwy.r-jwli3a.r-6koalj.r-18u37iz.r-16y2uox.r-1qd0xha.r-a023e6.r-b88u0q.r-1777fci.r-rjixqe.r-bcqeeo.r-q4m81j.r-qvutc0, span.css-901oao.css-16my406.css-bfa6kz.r-poiln3.r-1b43r93.r-1cwl3u0.r-bcqeeo.r-qvutc0{
+    /* buttons strings */
+    color: black;
+}
+
+.r-f6ebdl{
+    /* notification number */
+    color: black;
+    font-size: 12px;
+}
+
+.r-1uaug3w{
+    /* unable to view tweet */
+    background-color: #202020;
+    border-color: #2e2e2e;
+}
+
+.ep-MetricName,
+.ep-MetricValue,
+.QuoteTweet .tweet-content, .QuoteTweet-text a, .QuoteTweet-text a:hover, .QuoteTweet-text a:focus, .QuoteTweet-text a:active, .QuoteTweet-text .pretty-link b, .QuoteTweet-text .pretty-link s, .QuoteTweet-text .pretty-link:hover b, .QuoteTweet-text .pretty-link:hover s, .QuoteTweet-text .pretty-link:focus b, .QuoteTweet-text .pretty-link:focus s, .QuoteTweet-text .pretty-link:active b, .QuoteTweet-text .pretty-link:active s,
+b.ProfileTweet-fullname.u-linkComplex-target{
+    /* type of engagement, numbers, tweet content, profile name */
+    color: white;
+}
+
+.QuoteTweet.u-block.js-tweet-details-fixer{
+    /* quote rt border */
+    border-color: #2e2e2e;
+}
+
+.ep-TweetPerformance.ep-Section .ep-ViewAllEngagementsButton{
+    /* "View all engagements" button */
+    background-color: #202020;
+    color: #e699eb;
+    border-color: #2e2e2e;
+}
+
+.ep-Campaign.ep-Section{
+    /* border below the css-DIV above */
+    border-color: #2e2e2e;
+}
+
+.ep-Cta .ep-CtaTextContainer .ep-CtaSubText .ep-PerformanceValue{
+    /* total impressions float */
+    color: #e699eb;
+}
+
+.ep-Cta .ep-CtaQPv1{
+    /* "Promote your Tweet" button */
+    border-color: #2e2e2e;
+    background-color: #202020;
+    color: #e699eb;
+}
+
+.ep-DetailedEngagementsSection{
+    /* border between engagements */
+    border-color: #2e2e2e !important;
+}
+
+.css-901oao.r-jwli3a.r-1qd0xha.r-a023e6.r-16dba41.r-rjixqe.r-bcqeeo.r-1udh08x.r-bnwqim.r-fdjqy7.r-qvutc0{
+    /* ??? */
+    color: black !important;
+}
+
+.css-18t94o4.css-1dbjc4n.r-1niwhzg.r-sdzlij.r-1phboty.r-rs99b7.r-15ysp7h.r-4wgw6l.r-1ny4l3l.r-ymttw5.r-o7ynqc.r-6416eg.r-lrvibr{
+    /* "Following" button on threads (update fix) */
+    background-color: #e699eb;
+}
+
+.css-1dbjc4n.r-yfoy6g.r-wrkyx5.r-sdzlij.r-1phboty.r-rs99b7.r-18u37iz.r-ero68b.r-1udh08x.r-1udbk01{
+    /* topics buttons */
+    background-color: #202020;
+}
+
+.r-kpws4y,
+a.css-4rbku5.css-18t94o4.css-901oao.css-16my406.r-1loqt21.r-poiln3.r-bcqeeo.r-qvutc0,
+.css-901oao.r-1qd0xha.r-a023e6.r-16dba41.r-rjixqe.r-bcqeeo.r-5njf8e.r-qvutc0,
+div#id__6hde1gx4fni{
+    /* text & symbol, @ on comments, "Show replies", "Replying to" */
+    color: #e699eb !important;
+}
+
+.r-168457u{
+    /* "Tweet" small button */
+    background-color: #e699eb;
+}
+
+svg.r-4qtqp9.r-yyyyoo.r-z80fyv.r-dnmrzs.r-bnwqim.r-1plcrui.r-lrvibr.r-19wmn03{
+    /* svg icons - tweet script */
+    color: #e699eb !important;
+}
+
+}
