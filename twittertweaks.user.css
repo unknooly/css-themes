@@ -1,0 +1,136 @@
+/* ==UserStyle==
+@name           Twitter Tweaks
+@description    Small changes for Twitter
+@version        1.0.0
+@author         unknooly
+@namespace      https://github.com/unknooly/css-themes
+@homepageURL    https://github.com/unknooly/css-themes
+@updateURL      https://raw.githubusercontent.com/unknooly/css-themes/main/twittertweaks.user.css
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+
+/*a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-yfoy6g.r-f6ebdl.r-sdzlij.r-1phboty.r-14f9gny.r-1loqt21.r-1gzrgec.r-cnkkqs.r-zjg7tu.r-1v6e3re.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg.r-1xce0ei{
+    box-shadow: pink 0 0 0 2px !important;
+}*/
+
+.css-1dbjc4n.r-aaos50.r-kzbkwu{
+    /* removes comment padding */
+    padding: 0 0 0 0;
+}
+
+.css-1dbjc4n.r-1uaug3w.r-1kfrmmb.r-1efd50x.r-5kkj8d.r-tbmifm{
+    /* hides comment div */
+    display: none;
+}
+
+a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-va2hk5.r-f6ebdl.r-sdzlij.r-1phboty.r-14f9gny.r-1loqt21.r-1gzrgec.r-cnkkqs.r-zjg7tu.r-1v6e3re.r-1ny4l3l.r-1udh08x.r-o7ynqc.r-6416eg.r-1xce0ei{
+    /* profile pic ::hover */
+    box-shadow: pink 0 0 0 2px !important;
+    transition: 300ms !important;
+}
+
+.css-1dbjc4n.r-usiww2{
+    /* hides account selection on left side */
+    display:none
+}
+
+.css-1dbjc4n.r-173mn98.r-yfoy6g.r-c67a83.r-1qk6wnv.r-xnswec.r-1mf7evn.r-hvns9x.r-1jte41z,
+.css-1dbjc4n.r-173mn98.r-14lw9ot.r-c67a83.r-1qk6wnv.r-1upvrn0.r-1mf7evn.r-hvns9x.r-1jte41z,
+.css-1dbjc4n.r-173mn98.r-kemksi.r-c67a83.r-1qk6wnv.r-qo02w8.r-1mf7evn.r-hvns9x.r-1jte41z{
+    /* removes messages box (1dim 1def 1out) */
+    display:none;
+}
+
+a.css-4rbku5.css-18t94o4.css-1dbjc4n.r-1awozwy.r-1uaug3w.r-z2wwpe.r-1loqt21.r-18u37iz.r-hv52eu.r-1ny4l3l.r-xyw6el.r-o7ynqc.r-6416eg{
+    /* hides "wanna read article first?" */
+    display: none;
+}
+
+.r-1niwhzg.r-17gur6a.r-1yadl64.r-deolkf.r-homxoj.r-poiln3.r-7cikom.r-1ny4l3l.r-t60dpp.r-1ttztb7{
+    /* ??? */
+    min-height: 25px !important;
+}
+
+.css-1dbjc4n.r-1uaug3w.r-1uhd6vh.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1bro5k0.r-1udh08x,
+.css-1dbjc4n.r-1uaug3w.r-1uhd6vh.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x,
+.css-1dbjc4n.r-1niwhzg.r-18bvks7.r-1867qdf.r-1phboty.r-1yadl64.r-1ifxtd0.r-1udh08x,
+.css-1dbjc4n.r-1ihkh82.r-1in3vh1.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x,
+nav.css-1dbjc4n.r-18u37iz.r-1w6e6rj.r-ymttw5,
+.css-1dbjc4n.r-1ysxnx4.r-k0dy70.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x{
+    /* right side bar (3dim 2def 1out) */
+    display:none;
+}
+
+/* Adds bottom line for "What's Happening" div (1dim 1def) */
+/* obs.: if edited the superior div, it will affect all displays */
+.css-1dbjc4n.r-yfoy6g.r-oyd9sg{
+    padding: 4px 0 8px 0;
+    border-bottom: 1px solid #38444d;
+}   
+.css-1dbjc4n.r-14lw9ot.r-oyd9sg{
+    border-bottom: 1px solid #ebeef0;
+}
+.css-1dbjc4n.r-kemksi.r-oyd9sg{
+    border-bottom: 1px solid #2f3336;
+}
+
+.css-1dbjc4n.r-1uaug3w.r-1ila09b.r-rull8r.r-qklmqi.r-tbmifm,
+.css-1dbjc4n.r-1ihkh82.r-j7yic.r-rull8r.r-qklmqi.r-tbmifm,
+.css-1dbjc4n.r-1ysxnx4.r-1igl3o0.r-rull8r.r-qklmqi.r-tbmifm{
+    /* hides adblocked tweets (1dim 1def 1out) */
+    display: none;
+}
+
+div{
+    /* video controls animation */
+    transition-duration: 0ms !important;
+}
+
+.css-1dbjc4n.r-kuekak.r-109y4c4.r-1p6iasa{
+    /* removes extra border (own element) below "What's happening?"/create tweet */
+    display: none;
+}
+
+.css-1dbjc4n.r-1xcajam.r-ipm5af.r-1hycxz{
+    /* creates distance for search bar */
+    padding: 30px 0 0 0;
+}
+
+[aria-label="Image"]{
+    size: 100% !important;
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+[role="article"] > * *{
+    background-size: contain !important;
+}
+
+[aria-label="Embedded Video"]{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+}
+
+[aria-label="Video"]{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+}
+
+[role="alert"]{
+    display: none !important;
+}
+
+[data-testid="cta"]{
+    display: none !important;
+}
+
+}
