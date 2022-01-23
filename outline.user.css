@@ -1,0 +1,114 @@
+/* ==UserStyle==
+@name           Outline Dark
+@description    Dark theme for Outline
+@version        1.0.0
+@author         unknooly
+@namespace      https://github.com/unknooly/custom-css
+@homepageURL    https://github.com/unknooly/custom-css
+@updateURL      https://raw.githubusercontent.com/unknooly/custom-css/main/outline.user.css
+==/UserStyle== */
+
+@-moz-document domain("outline.com") {
+
+/* start page */
+
+.abovefold{
+    background-color: #181818;
+}
+
+.subheading{
+    color: white;
+}
+
+.source-input,.source-input:focus{
+    background-color: #181818;
+    border: 1px solid darkcyan;
+}
+.source-input:focus{
+    border: 1px solid cyan;
+    color: lightgray !important
+}
+
+.input-label{
+    background-color: #181818;
+    color: gray;
+}
+
+button.clean{
+    background-color: darkcyan;
+    color: #181818;
+}
+.clean:hover{
+    opacity: .7;
+    background-color: cyan;
+}
+
+a{
+    color: darkcyan;
+}
+a:hover{
+    color: cyan;
+}
+
+/* article page */
+
+:root{
+    --base-color: gray;
+    --code-color: red;
+    --emphasis-color: cyan;
+    --pre-code-color: pink;
+    --figure-color: orange;
+    --blockquote-color: yellow;
+    
+    --link-color: darkcyan;
+    --link-hover-color: darkcyan;
+}
+
+body{
+    background-color: #181818;
+}
+
+.annotations-btn,.annotations-btn-wrapper .annotations-btn, .copy-link-field{
+    background-color: #181818;
+}
+
+.copy-button{
+    background-color: cyan;
+    color: #181818;
+}
+
+.about{
+    display: none;
+    margin: 0 0 0 0;
+}
+
+.footer{
+    height: 20px;
+}
+
+.yue a:hover{
+    text-shadow: 0 0 !important;
+    color: cyan;
+    opacity: .6;
+}
+
+.outline-toolbar.outline-toolbar--fixed,
+.outline-toolbar{
+    display: none;
+}
+
+.hypothesis-highlights-always-on .hypothesis-highlight{
+    background-color: #101010;
+}
+
+.article-close{
+    background-color: #202020;
+    opacity: 1;
+    color: darkcyan;
+}
+.article-close:hover{
+    border: 2px solid darkcyan;
+    color: cyan;
+}
+
+}
