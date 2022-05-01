@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           Square Icon
+@description    Square icon for Twitter
+@version        1.0.0
+@author         unknooly
+@namespace      https://github.com/unknooly/css-themes
+@homepageURL    https://github.com/unknooly/css-themes
+@updateURL      https://raw.githubusercontent.com/unknooly/css-themes/main/squareicon
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+.r-1udh08x{
+    overflow: visible;
+}
+}
