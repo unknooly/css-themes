@@ -1,0 +1,129 @@
+/* ==UserStyle==
+@name           TwitterColors
+@namespace      https://github.com/unknooly/css-themes
+@update URL     https://github.com/unknooly/css-themes/raw/main/twittercolors.user.css
+@version        1.0.0-20240615
+@description    Change color of Twitter (X)
+@author         Chaos (https://github.com/unknooly)
+
+@preprocessor stylus
+
+@var color bg "Background" #181818
+@var color search "Search button background" #202020
+@var color bd "Borders" #2e2e2e
+@var color bt "Buttons and texts" #e699eb
+@var color bt2 "Buttons when hovered" #d659de
+@var color str "Text inside the buttons" black
+
+==/UserStyle== */
+
+@-moz-document url-prefix("https://x.com") {
+
+
+
+/* main page little header >> section selector border-bottom */
+.css-175oi2r.r-xoduu5.r-1kihuf0.r-sdzlij.r-1p0dtai.r-hdaws3.r-s8bhmr.r-u8s1d.r-13qz1uu{
+	background-color: bt !important;
+}
+/* main page little header */
+.r-ii8lfi{
+	background-color: rgba(24,24,24,0.8); 
+	/* if opacity is used, then it won't have the blur effect */
+}
+/* both sidebars */
+body{
+	background-color: bg !important;
+}
+/* timeline and search bar (padded by another css file) */
+.r-yfoy6g{
+	background-color: bg;
+}
+/* search bar */
+.r-8erxvq{
+	background-color: search;
+}
+
+
+
+/* borders */
+.r-1ila09b, /* timeline horizonal lines */
+.r-18bvks7 /* timeline vertical lines and media */
+{
+	border-color: bd !important;
+}
+/* thread/replies lines */
+.r-157er04{
+	background-color: bd;
+}
+
+
+
+/* "Post" buttons aka old "Tweet" button */
+[aria-label="Post"],
+button[data-testid="tweetButtonInline"]{
+	background-color: bt !important;
+	border: 1px solid bd !important;
+}
+/* "Post" buttons hovered */
+[aria-label="Post"]:hover,
+button[data-testid="tweetButtonInline"]:hover{
+	background-color: bt2 !important;
+}
+/* strings */
+a[href="/compose/post"]>* /* "Post" big button */
+,button[data-testid="tweetButtonInline"]>* /* "Post" small button */
+,a[href="/messages/compose"]>* /* "New message" */{
+	color: str !important;
+}
+/* small "Post" button fix visibility when not selected */
+.r-icoktb{
+	opacity: 1;
+	/* this also fixes the location sharing icon */
+}
+/* svgs of timeline posting menu */
+svg[aria-hidden="true"][class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03"]{
+	fill: bt !important;
+}
+/* verified symbol */
+svg[aria-label="Verified account"]{
+	fill: bt !important;
+}
+/* new unread posts (aka circle notification on right side of the home button) */
+[aria-label="undefined unread items"]{
+	background-color: bt;
+}
+
+
+
+/* border of div(interaction counters) inside tweet analytics */
+.r-126aqm3{
+	border-color: bd !important;
+}
+/* line inside tweet analytics */
+.r-kuekak{
+	background-color: bd;
+}
+
+
+
+/* strings */
+div[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-16dba41"] /* div that shows more posts/replies */
+,a[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1loqt21"] /* hashtags and @ (doesn't work on hovers, but maybe that's fine?) */
+,a[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41 r-1s2bzr4 r-1loqt21"] /* "show all" button on notifications */
+div[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41"]>span[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"] span[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"] /* "and" in notifications when there are hidden @ of accounts */
+,button[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-n6v787 r-1cwl3u0 r-16dba41 r-6koalj r-1w6e6rj r-14gqq1x r-1loqt21 r-fdjqy7"] /* "translate bio" (maybe has more uses?) */
+,a[role="link"] /* "view more" in bio + age of tweet on timeline (maybe has more uses?) */
+{
+	color: bt !important;
+}
+
+
+
+/* "New message" button on dm*/
+a[href="/messages/compose"][data-testid="empty_state_button_text"]{
+	background-color: bt !important;
+}
+
+
+
+}/* moz-document */
