@@ -1,0 +1,100 @@
+/* ==UserStyle==
+@name           TwitterFix
+@namespace      https://github.com/unknooly/css-themes
+@update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
+@version        1.0.0
+@description    Fix some stuff on Twitter (X)
+@author         Chaos (https://github.com/unknooly)
+
+==/UserStyle== */
+
+@-moz-document url-prefix("https://x.com") {
+/* Main code */
+
+.css-175oi2r.r-yfoy6g.r-18bvks7.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x /* main elements */
+,.css-175oi2r.r-18bvks7.r-1867qdf.r-1phboty.r-1ifxtd0.r-1udh08x.r-1niwhzg.r-1yadl64 /* terms of service & stuff*/
+{
+    /* removes right side bar */
+    display:none;
+}
+
+div{
+    /* removes video controls animation */
+    transition-duration: 0ms !important;
+}
+
+.css-175oi2r.r-1awozwy.r-aqfbo4.r-yfoy6g.r-18u37iz.r-1h3ijdo.r-6gpygo.r-15ysp7h.r-1xcajam.r-ipm5af.r-136ojw6.r-1hycxz{
+    /* creates distance for home page's search bar */
+    padding: 100px 0 0 20px !important;
+}
+div[class="css-175oi2r r-aqfbo4 r-gtdqiz r-1gn8etr r-1g40b8q"] div[class="css-175oi2r r-136ojw6"]{
+	/* creates distance for explore page's search bar */
+	padding: 20px 0;
+}
+
+input[placeholder="Search"]{
+    /* home/explore pages' search button */
+	min-height: 50px;
+    font-size: 20px;
+}
+
+.r-drfeu3{
+    /* removes Content-Warned images' popup */
+    display: none !important;
+}
+.r-yfv4eo{
+    /* removes Content-Warned images' blur */
+    filter: none !important;
+}
+
+.css-18t94o4.css-1dbjc4n.r-168457u.r-sdzlij.r-tznlht.r-1777fci.r-orgf3d.r-1ny4l3l.r-ymttw5.r-d3hbe1.r-o7ynqc.r-6416eg.r-nx0j10{
+    /* hides "see new tweets" button (in-timeline notification) */
+    display: none !important;
+}
+
+.css-175oi2r.r-633pao.r-u8s1d.r-dkhcqf.r-axxi2z.r-18jm5s1.r-13qz1uu{
+	/* hides notification of new posts */
+	visibility: hidden !important;
+}
+[aria-label="undefined unread items"]{
+	/* hides new unread posts' notification circle */
+	display: none !important;
+}
+
+.css-175oi2r>[href="/i/topics/pinned"] /* "Pinned by people you follow" strings */
+,.css-175oi2r>[aria-label="Timeline: Carousel"] /* Pinned/DiscoverNewCommunities tweets */
+,.css-175oi2r[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"] /* DiscoverNewCommunities/WhoToFollow div with the string */
+,.css-175oi2r[href="/i/communities/suggested"] /* "Show more" of DiscoverNewCommunities tweets */
+,.css-175oi2r[href^="/i/connect_people?user_id="]  /* "Show more" of WhoToFollow tweets */
+,.css-175oi2r>.css-175oi2r.r-l00any.r-109y4c4.r-kuekak /* div that adds margin/border to timeline */
+,[class="css-175oi2r"] [class="css-175oi2r r-1adg3ll r-1ny4l3l"] [class="css-175oi2r"] button[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"] /* WhoToFollow suggested accounts */
+{
+	display: none !important;
+}
+
+[role="article"] > * *{
+    background-size: contain !important;
+}
+
+.css-175oi2r.r-18bvks7.r-1phboty.r-rs99b7.r-1867qdf.r-1udh08x.r-o7ynqc.r-6416eg.r-1ny4l3l{
+	/* removes timeline images' border cut */
+	border-radius: 0px !important;
+}
+
+[aria-label="Embedded Video"]{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+}
+
+[aria-label="Video"]{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+}
+
+}/* moz-document */
