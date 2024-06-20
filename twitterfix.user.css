@@ -67,7 +67,7 @@ input[placeholder="Search"]{
 ,.css-175oi2r[href="/i/communities/suggested"] /* "Show more" of DiscoverNewCommunities tweets */
 ,.css-175oi2r[href^="/i/connect_people?user_id="]  /* "Show more" of WhoToFollow tweets */
 ,.css-175oi2r>.css-175oi2r.r-l00any.r-109y4c4.r-kuekak /* div that adds margin/border to timeline */
-,[class="css-175oi2r"] [class="css-175oi2r r-1adg3ll r-1ny4l3l"] [class="css-175oi2r"] button[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"] /* WhoToFollow suggested accounts */
+,[aria-label$="posts"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* hides WhoToFollow accounts, took me so long to find this one */
 {
 	display: none !important;
 }
@@ -96,5 +96,5 @@ input[placeholder="Search"]{
     border: 0px !important;
     margin: 0px !important;
 }
-
+	
 }/* moz-document */
