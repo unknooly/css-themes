@@ -67,7 +67,9 @@ input[placeholder="Search"]{
 ,.css-175oi2r[href="/i/communities/suggested"] /* "Show more" of DiscoverNewCommunities tweets */
 ,.css-175oi2r[href^="/i/connect_people?user_id="]  /* "Show more" of WhoToFollow tweets */
 ,.css-175oi2r>.css-175oi2r.r-l00any.r-109y4c4.r-kuekak /* div that adds margin/border to timeline */
-,[aria-label$="posts"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* hides WhoToFollow accounts, took me so long to find this one */
+,[aria-label$="posts"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* hides WhoToFollow accounts */
+,[aria-label$="Timeline: Your Home Timeline"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* hides WhoToFollow accounts on timeline */
+,[class="css-175oi2r r-494qqr"]:has([href="/i/premium_sign_up?referring_page=timeline_prompt"]) /* hides GoAdFree ad */
 {
 	display: none !important;
 }
@@ -96,5 +98,5 @@ input[placeholder="Search"]{
     border: 0px !important;
     margin: 0px !important;
 }
-	
+
 }/* moz-document */
