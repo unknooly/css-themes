@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.3
+@version        1.0.5
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -70,6 +70,7 @@ input[placeholder="Search"]{
 ,[aria-label$="posts"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* hides WhoToFollow accounts */
 ,[aria-label$="Timeline: Your Home Timeline"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* hides WhoToFollow accounts on timeline */
 ,[class="css-175oi2r r-494qqr"]:has([href="/i/premium_sign_up?referring_page=timeline_prompt"]) /* hides GoAdFree ad */
+,[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(button[aria-label~="Subscribe"]) /* hides Subscribe suggestions*/
 {
 	display: none !important;
 }
@@ -81,6 +82,11 @@ input[placeholder="Search"]{
 .css-175oi2r.r-18bvks7.r-1phboty.r-rs99b7.r-1867qdf.r-1udh08x.r-o7ynqc.r-6416eg.r-1ny4l3l{
 	/* removes timeline images' border cut */
 	border-radius: 0px !important;
+}
+
+[href="/i/premium_sign_up"]{
+	/* hides premium button on left sidebar */
+	display: none !important
 }
 
 [aria-label="Embedded Video"]{
