@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.5
+@version        1.0.6
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -61,16 +61,19 @@ input[placeholder="Search"]{
 	display: none !important;
 }
 
-.css-175oi2r>[href="/i/topics/pinned"] /* "Pinned by people you follow" strings */
+.css-175oi2r>[href="/i/topics/pinned"] /* PinnedByPeopleYouFollow strings */
 ,.css-175oi2r>[aria-label="Timeline: Carousel"] /* Pinned/DiscoverNewCommunities tweets */
 ,.css-175oi2r[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"] /* DiscoverNewCommunities/WhoToFollow div with the string */
 ,.css-175oi2r[href="/i/communities/suggested"] /* "Show more" of DiscoverNewCommunities tweets */
 ,.css-175oi2r[href^="/i/connect_people?user_id="]  /* "Show more" of WhoToFollow tweets */
 ,.css-175oi2r>.css-175oi2r.r-l00any.r-109y4c4.r-kuekak /* div that adds margin/border to timeline */
-,[aria-label$="posts"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* hides WhoToFollow accounts */
-,[aria-label$="Timeline: Your Home Timeline"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* hides WhoToFollow accounts on timeline */
-,[class="css-175oi2r r-494qqr"]:has([href="/i/premium_sign_up?referring_page=timeline_prompt"]) /* hides GoAdFree ad */
-,[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(button[aria-label~="Subscribe"]) /* hides Subscribe suggestions*/
+,[aria-label$="posts"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /*  WhoToFollow accounts */
+,[aria-label$="Timeline: Your Home Timeline"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /* WhoToFollow accounts on timeline */
+,[class="css-175oi2r r-494qqr"]:has([href="/i/premium_sign_up?referring_page=timeline_prompt"]) /* GoAdFree ad */
+,a[href="/i/verified-orgs-signup"] /* VerifiedOrgs button on left side bar */
+,[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(button[aria-label~="Subscribe"]) /* Subscribe suggestions */
+,[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"] /* RevisitYourBookmarks on timeline */
+,a[href="/i/grok"] /* Grok */
 {
 	display: none !important;
 }
