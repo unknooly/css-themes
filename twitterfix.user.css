@@ -73,6 +73,7 @@ input[placeholder="Search"]{
 ,a[href="/i/verified-orgs-signup"] /* VerifiedOrgs button on left side bar */
 ,[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(button[aria-label~="Subscribe"]) /* Subscribe suggestions */
 ,[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"] /* RevisitYourBookmarks on timeline */
+,a[href="/jobs"] /* Jobs */
 ,a[href="/i/grok"] /* Grok */
 ,.r-1dum35f.r-z2knda.r-1udh08x:has([aria-label="Who to follow"]) /* WhoToFollow list on profile that shows after following someone */
 {
