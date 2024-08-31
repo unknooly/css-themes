@@ -32,9 +32,8 @@ div[class="css-175oi2r r-aqfbo4 r-gtdqiz r-1gn8etr r-1g40b8q"] div[class="css-17
 	padding: 20px 0;
 }
 
-[class="css-175oi2r r-1e5uvyk r-ii8lfi"]>[class="css-175oi2r"]{
+[class="css-175oi2r r-1e5uvyk r-ii8lfi"]>[class="css-175oi2r"]:has([placeholder="Search Bookmarks"]){
 	/* hides search bookmark bar */
-	background-color: white !important;
 	display: none !important;
 }
 
