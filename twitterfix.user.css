@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.10
+@version        1.0.11
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -59,7 +59,7 @@ input[placeholder="Search"]{
 	visibility: hidden !important;
 }
 
-/* ADS-SECTION */
+/* ADS */
 .css-175oi2r>[href="/i/topics/pinned"] /* PinnedByPeopleYouFollow strings */
 ,.css-175oi2r>[aria-label="Timeline: Carousel"] /* Pinned/DiscoverNewCommunities tweets */
 ,.css-175oi2r[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"] /* DiscoverNewCommunities/WhoToFollow div with the string */
@@ -77,9 +77,14 @@ input[placeholder="Search"]{
 ,.r-1dum35f.r-z2knda.r-1udh08x:has([aria-label="Who to follow"]) /* WhoToFollow list on profile that shows after following someone */
 ,[class$="css-175oi2r r-494qqr"]:has([href^="/i/premium_sign_up"]) /* GoAd-freeWithPremium+ tweet */
 ,[href="/i/premium_sign_up"]/* hides premium button on left sidebar */
-/* PERSONAL-OPTIONS-SECTION */
-,a[href="/jobs"] /* Jobs */
+{
+	display: none !important;
+}
+
+/* PERSONAL OPTIONS */
+a[href="/jobs"] /* Jobs */
 ,a[href="/i/grok"] /* Grok */
+,[data-testid="analytics-preview"] /* analytics on profile */
 {
 	display: none !important;
 }
