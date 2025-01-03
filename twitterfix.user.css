@@ -2,13 +2,15 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.11
+@version        1.0.12
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://x.com") {
+/* Main code */
+
 /* Main code */
 
 .css-175oi2r.r-yfoy6g.r-18bvks7.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x /* main elements */
@@ -85,6 +87,7 @@ input[placeholder="Search"]{
 a[href="/jobs"] /* Jobs */
 ,a[href="/i/grok"] /* Grok */
 ,[data-testid="analytics-preview"] /* analytics on profile */
+,[role="presentation"]:has( [aria-label="Generate image"]) /* Generate image button */
 {
 	display: none !important;
 }
