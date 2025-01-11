@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.13
+@version        1.0.14
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -91,16 +91,22 @@ a[href="/jobs"] /* Jobs */
 }
 
 [class="css-175oi2r r-1s2bzr4 r-dnmrzs r-bnwqim"]{
-	/* 	AI buttons on tweet */
+	/* AI buttons on tweet */
 	display: none !important;
 }
 
 [data-testid="trend"]{
-	/* 	some random trend stuff that appears on timeline */
+	/* some random trend stuff that appears on timeline */
 	display: none !important;
 }
 
 [class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([href="/explore"]){
+	/* explore button that appears after trend stuff */
+	display: none !important;
+}
+
+[aria-label="Enhance your post with Grok"]{
+	/* button about the label, appears on top "post" section */
 	display: none !important;
 }
 
