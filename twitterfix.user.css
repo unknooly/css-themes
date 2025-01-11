@@ -11,8 +11,6 @@
 @-moz-document url-prefix("https://x.com") {
 /* Main code */
 
-/* Main code */
-
 .css-175oi2r.r-yfoy6g.r-18bvks7.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x /* main elements */
 ,.css-175oi2r.r-18bvks7.r-1867qdf.r-1phboty.r-1ifxtd0.r-1udh08x.r-1niwhzg.r-1yadl64 /* terms of service & stuff*/
 {
@@ -92,6 +90,20 @@ a[href="/jobs"] /* Jobs */
 	display: none !important;
 }
 
+[class="css-175oi2r r-1s2bzr4 r-dnmrzs r-bnwqim"]{
+	/* 	AI buttons on tweet */
+	display: none !important;
+}
+
+[data-testid="trend"]{
+	/* 	some random trend stuff that appears on timeline */
+	display: none !important;
+}
+
+[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([href="/explore"]){
+	display: none !important;
+}
+
 [role="article"] > * *{
     background-size: contain !important;
 }
@@ -116,5 +128,4 @@ a[href="/jobs"] /* Jobs */
     border: 0px !important;
     margin: 0px !important;
 }
-
 }/* moz-document */
