@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.14
+@version        1.0.15
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -107,6 +107,16 @@ a[href="/jobs"] /* Jobs */
 
 [aria-label="Enhance your post with Grok"]{
 	/* button about the label, appears on top "post" section */
+	display: none !important;
+}
+
+[aria-label="Send a tip"]{
+	/* send a tip button on someone else's profile */
+	display: none !important;
+}
+
+[aria-label="Profile Summary"]{
+	/* AI button on profile */
 	display: none !important;
 }
 
