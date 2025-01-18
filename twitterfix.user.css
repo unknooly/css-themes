@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.15b
+@version        1.0.15c
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -122,6 +122,11 @@ a[href="/jobs"] /* Jobs */
 
 [class="css-175oi2r r-18u37iz r-1h0z5md"]:has([aria-label="Grok actions"]){
 	/* "Explain this post" AI button */
+	display: none !important;
+}
+
+[data-testid="GrokDrawer"]{
+	/* Grok button, similar to DMs button */
 	display: none !important;
 }
 
