@@ -130,6 +130,11 @@ a[href="/jobs"] /* Jobs */
 	display: none !important;
 }
 
+/* "Subscribe" button on profile */
+[aria-label^="Subscribe"]{
+	display: none !important;
+}
+
 [role="article"] > * *{
     background-size: contain !important;
 }
