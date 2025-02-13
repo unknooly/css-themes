@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.16
+@version        1.0.16b
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -101,7 +101,7 @@ div{
 /* Grok and AI */
 ,a[href="/i/grok"] /* Grok */
 ,[role="presentation"]:has( [aria-label="Generate image"]) /* Generate image button */
-,[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"] /* AI profile summary */
+,[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(svg) /* AI profile summary */
 ,[class="css-175oi2r r-1s2bzr4 r-dnmrzs r-bnwqim"] /* AI buttons on tweet */
 ,[aria-label="Enhance your post with Grok"] /* button about the label, appears on top "post" section */
 ,[data-testid="GrokDrawer"] /* Grok button, similar to DMs button */
