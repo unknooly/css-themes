@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.2
+@version        1.0.3
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -97,6 +97,7 @@ div{
 /* ADS */
 ,[class$="css-175oi2r r-494qqr"]:has([href^="/i/premium_sign_up"]) /* GoAd-freeWithPremium+ tweet */
 ,[href="/i/premium_sign_up"]/* hides premium button on left sidebar */
+,[class="css-175oi2r r-1xfd6ze r-1udh08x r-18u37iz r-1h0z5md"]:has(img[src*="premium_nux/analytics"]) /* "Access your post analytics" on own user tweet */
 
 /* Grok and AI */
 ,a[href="/i/grok"] /* Grok */
@@ -107,7 +108,6 @@ div{
 ,[data-testid="GrokDrawer"] /* Grok button, similar to DMs button */
 ,[class="css-175oi2r r-18u37iz r-1h0z5md"]:has([aria-label="Grok actions"]) /* "Explain this post" AI button */
 ,[aria-label="Profile Summary"] /* AI button on profile */
-
 {
 	display: none !important;
 }
