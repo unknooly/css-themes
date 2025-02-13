@@ -2,56 +2,67 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.15c
+@version        1.0.16
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://x.com") {
-/* Main code */
+/* makes media simply better */
+[role="article"] > * *{
+    background-size: contain !important;
+} .css-175oi2r.r-18bvks7.r-1phboty.r-rs99b7.r-1867qdf.r-1udh08x.r-o7ynqc.r-6416eg.r-1ny4l3l{
+	/* removes timeline images' border cut */
+	border-radius: 0px !important;
+} [aria-label="Embedded Video"]{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+} [aria-label="Video"]{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+}
 
 .css-175oi2r.r-yfoy6g.r-18bvks7.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x /* main elements */
-,.css-175oi2r.r-18bvks7.r-1867qdf.r-1phboty.r-1ifxtd0.r-1udh08x.r-1niwhzg.r-1yadl64 /* terms of service & stuff*/
+,.css-175oi2r.r-18bvks7.r-1867qdf.r-1phboty.r-1ifxtd0.r-1udh08x.r-1niwhzg.r-1yadl64 /* terms of service & stuff */
 {
     /* removes right side bar */
-    display:none;
+    display: none !important;
 }
 
 div{
-    /* removes video controls animation */
+    /* removes the animation of video controls */
     transition-duration: 0ms !important;
 }
 
 .css-175oi2r.r-1awozwy.r-aqfbo4.r-yfoy6g.r-18u37iz.r-1h3ijdo.r-6gpygo.r-15ysp7h.r-1xcajam.r-ipm5af.r-136ojw6.r-1hycxz{
     /* creates distance for home page's search bar */
     padding: 100px 0 0 20px !important;
-}
-div[class="css-175oi2r r-aqfbo4 r-gtdqiz r-1gn8etr r-1g40b8q"] div[class="css-175oi2r r-136ojw6"]{
+} div[class="css-175oi2r r-aqfbo4 r-gtdqiz r-1gn8etr r-1g40b8q"] div[class="css-175oi2r r-136ojw6"]{
 	/* creates distance for explore page's search bar */
 	padding: 20px 0;
-}
-
-[class="css-175oi2r r-1e5uvyk r-ii8lfi"]>[class="css-175oi2r"]:has([placeholder="Search Bookmarks"]){
+} [class="css-175oi2r r-1e5uvyk r-ii8lfi"]>[class="css-175oi2r"]:has([placeholder="Search Bookmarks"]){
 	/* hides search bookmark bar */
 	display: none !important;
-}
-
-[class="css-175oi2r r-1e5uvyk r-ii8lfi"]:nth-child(1)
-{
-/* 	display: none !important; */
-	text-align: center;
-}
-
-input[placeholder="Search"]{
+} input[placeholder="Search"]{
     /* home/explore pages' search button */
 	min-height: 50px;
     font-size: 20px;
 }
 
+/* Content-Warned images */
 .r-yfv4eo{
-    /* removes Content-Warned images' blur */
+    /* the blur */
     filter: none !important;
+} r-drfeu3{
+    /* the popup */
+    display: none !important;
 }
 
 .css-175oi2r.r-633pao.r-u8s1d.r-dkhcqf.r-axxi2z.r-18jm5s1.r-13qz1uu{
@@ -59,14 +70,15 @@ input[placeholder="Search"]{
 	visibility: hidden !important;
 }
 
-/* ADS */
+/* everything below is one thing altogether */
+
+/* BLOAT */
 .css-175oi2r>[href="/i/topics/pinned"] /* PinnedByPeopleYouFollow strings */
 ,.css-175oi2r>[aria-label="Timeline: Carousel"] /* Pinned/DiscoverNewCommunities tweets */
 ,.css-175oi2r[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"] /* DiscoverNewCommunities/WhoToFollow div with the string */
 ,.css-175oi2r[href="/i/communities/suggested"] /* "Show more" of DiscoverNewCommunities tweets */
 ,.css-175oi2r[href^="/i/connect_people?user_id="]  /* "Show more" of WhoToFollow tweets */
 ,.css-175oi2r>.css-175oi2r.r-l00any.r-109y4c4.r-kuekak /* div that adds margin/border to timeline */
-,r-drfeu3 /* removes Content-Warned images' popup */
 ,[aria-label="undefined unread items"] /* hides new unread posts' notification circle */
 ,.css-18t94o4.css-1dbjc4n.r-168457u.r-sdzlij.r-tznlht.r-1777fci.r-orgf3d.r-1ny4l3l.r-ymttw5.r-d3hbe1.r-o7ynqc.r-6416eg.r-nx0j10 /* SeeNewTweets button (in-timeline notification) */
 ,[aria-label$="posts"] [class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has([class="css-146c3p1"]) /*  WhoToFollow accounts */
@@ -75,88 +87,28 @@ input[placeholder="Search"]{
 ,[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(button[aria-label~="Subscribe"]) /* Subscribe suggestions */
 ,[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"] /* RevisitYourBookmarks on timeline */
 ,.r-1dum35f.r-z2knda.r-1udh08x:has([aria-label="Who to follow"]) /* WhoToFollow list on profile that shows after following someone */
+,a[href="/jobs"] /* Jobs */
+,[data-testid="analytics-preview"] /* analytics on profile */
+,[aria-label^="Subscribe"] /* "Subscribe" (to someone else's twitter) button on (their) profile */
+,[aria-label="Send a tip"] /* send a tip button on someone else's profile */
+,[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([href="/explore"]) /* explore button that appears after trend stuff */
+,[data-testid="trend"] /* some random trend stuff that appears on timeline */
+
+/* ADS */
 ,[class$="css-175oi2r r-494qqr"]:has([href^="/i/premium_sign_up"]) /* GoAd-freeWithPremium+ tweet */
 ,[href="/i/premium_sign_up"]/* hides premium button on left sidebar */
-{
-	display: none !important;
-}
 
-/* PERSONAL OPTIONS */
-a[href="/jobs"] /* Jobs */
+/* Grok and AI */
 ,a[href="/i/grok"] /* Grok */
-,[data-testid="analytics-preview"] /* analytics on profile */
 ,[role="presentation"]:has( [aria-label="Generate image"]) /* Generate image button */
+,[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"] /* AI profile summary */
+,[class="css-175oi2r r-1s2bzr4 r-dnmrzs r-bnwqim"] /* AI buttons on tweet */
+,[aria-label="Enhance your post with Grok"] /* button about the label, appears on top "post" section */
+,[data-testid="GrokDrawer"] /* Grok button, similar to DMs button */
+,[class="css-175oi2r r-18u37iz r-1h0z5md"]:has([aria-label="Grok actions"]) /* "Explain this post" AI button */
+,[aria-label="Profile Summary"] /* AI button on profile */
+
 {
 	display: none !important;
-}
-
-[class="css-175oi2r r-1s2bzr4 r-dnmrzs r-bnwqim"]{
-	/* AI buttons on tweet */
-	display: none !important;
-}
-
-[data-testid="trend"]{
-	/* some random trend stuff that appears on timeline */
-	display: none !important;
-}
-
-[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([href="/explore"]){
-	/* explore button that appears after trend stuff */
-	display: none !important;
-}
-
-[aria-label="Enhance your post with Grok"]{
-	/* button about the label, appears on top "post" section */
-	display: none !important;
-}
-
-[aria-label="Send a tip"]{
-	/* send a tip button on someone else's profile */
-	display: none !important;
-}
-
-[aria-label="Profile Summary"]{
-	/* AI button on profile */
-	display: none !important;
-}
-
-[class="css-175oi2r r-18u37iz r-1h0z5md"]:has([aria-label="Grok actions"]){
-	/* "Explain this post" AI button */
-	display: none !important;
-}
-
-[data-testid="GrokDrawer"]{
-	/* Grok button, similar to DMs button */
-	display: none !important;
-}
-
-/* "Subscribe" button on profile */
-[aria-label^="Subscribe"]{
-	display: none !important;
-}
-
-[role="article"] > * *{
-    background-size: contain !important;
-}
-
-.css-175oi2r.r-18bvks7.r-1phboty.r-rs99b7.r-1867qdf.r-1udh08x.r-o7ynqc.r-6416eg.r-1ny4l3l{
-	/* removes timeline images' border cut */
-	border-radius: 0px !important;
-}
-
-[aria-label="Embedded Video"]{
-    width: 100% !important;
-    height: 100% !important;
-    padding: 0px !important;
-    border: 0px !important;
-    margin: 0px !important;
-}
-
-[aria-label="Video"]{
-    width: 100% !important;
-    height: 100% !important;
-    padding: 0px !important;
-    border: 0px !important;
-    margin: 0px !important;
 }
 }/* moz-document */
