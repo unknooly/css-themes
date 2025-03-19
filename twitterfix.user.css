@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.3
+@version        1.0.4
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -108,6 +108,7 @@ div{
 ,[data-testid="GrokDrawer"] /* Grok button, similar to DMs button */
 ,[class="css-175oi2r r-18u37iz r-1h0z5md"]:has([aria-label="Grok actions"]) /* "Explain this post" AI button */
 ,[aria-label="Profile Summary"] /* AI button on profile */
+,[class="css-175oi2r r-dnmrzs r-nsbfu8"]:has([href*="premium"]) /* "You aren't verified yet" message on profile */
 {
 	display: none !important;
 }
