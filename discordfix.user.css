@@ -1,0 +1,64 @@
+/* ==UserStyle==
+@name           DiscordFix
+@namespace      https://github.com/unknooly/css-themes
+@update URL     https://github.com/unknooly/css-themes/raw/main/discordfix.user.css
+@version        1.0.0
+@description    Fix some stuff on Discord
+@author         Chaos (https://github.com/unknooly)
+
+==/UserStyle== */
+
+@-moz-document url-prefix("https://discord.com") {
+/* highlight plugins on configs */
+[class="vc-plugins item_b3f026 themed_b3f026"]{
+    background-color: darkgreen !important;
+    color: white !important;
+} [class="vc-plugins item_b3f026 themed_b3f026"]:hover{
+    background-color: darkgreen !important;
+    color: white !important;
+}
+
+/* ADS */
+[aria-label="Merch"] /* merch */
+,[aria-label="Billing"] /* billing */
+,[aria-label="Gift Inventory"] /* gift inventory */
+,[aria-label="Subscriptions"] /* subscriptions */
+,[class="premiumTab__581ea item_b3f026 themed_b3f026"] /* nitro */
+,[class="item_b3f026 themed_b3f026"]:nth-of-type(15) /* server boost */
+,[class="header_b3f026"] /* billing settings */
+,[class="separator_b3f026"]:nth-of-type(12) /* separator of billing section */
+,[class="channel__972a0 container_e45859"]:has([href="/shop"]) /* Shop button on top of dms */
+,[class="channel__972a0 container_e45859"]:has([href="/store"]) /* Nitro button on top of dms */
+,[class="notice_be03aa colorPremiumTier2_be03aa colorPremium_be03aa"] /* "You have 3 days Nitro trial!" */
+,[class*="floatingNitroUpsell"] /* nitro banner (inside profile editor) */
+,div>div[class*="tryItOutSection"] /* nitro preview (inside profile editor) */
+,[class="container__8279f"] /* nitro ad on top of page (inside profile editor) */
+,[class^="upsellContainer"] /* "Amp up your profile" ad insile small profile pop up */
+,section>[class="header__67a11"],[role="radiogroup"]>div>[class="header_a00e6e"] /* nitro ads on Appearance menu on configs */
+,div>[aria-label="Send a gift"] /* "Send a gift" button on message box */
+{
+    display: none;
+}
+
+/* PERSONAL OPTIONS */
+[class="footer__214dc"] /* "Discover" button */
+,[aria-label="Family Center"] /* family center */
+,[class*="vc-settings-donate"] /* donation request on plugin page */
+,[class*="avatarDecoration"] /* avatar decoration */
+{
+    display: none !important;
+}
+
+/* VENCORD OPTIONS */
+[class="vc-settings-quickActions-pill"]:has([class*="vc-restart-icon"]) /* "Relaunch Discord" (vencord) button */
+,[aria-label^="Click to react"],[aria-label^="Add Reaction"],[aria-label^="Reply"],[aria-label="Forward"],[aria-label="More"],[class="separator_f84418"],[class="separator_e986d9"] /* message buttons when hover, only allowing the "raw" (vencord) button to stay */
+,[class^="vc-special-card"] /* vencord ad */
+{
+    display: none !important;
+}
+
+/* makes new UI less bad */
+[class="panels_c48ade"],a,[class*="channelTextArea"]{
+    border-radius: 0px !important;
+}
+}/* moz-document */
