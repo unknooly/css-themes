@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
-@version        1.0.4
+@version        1.0.5
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -22,17 +22,23 @@
 /* main page little header >> section selector border-bottom */
 .css-175oi2r.r-xoduu5.r-1kihuf0.r-sdzlij.r-1p0dtai.r-hdaws3.r-s8bhmr.r-u8s1d.r-13qz1uu
 ,a[href="/messages/compose"][data-testid="empty_state_button_text"] /* "New message" button on dm*/
+,[class*="r-l5o3uw"] /* menu item of reply scope while creating a post */
 {
 	background-color: bt !important;
 }
 
-/* "Reply" button */
+/* "Reply" button - accompanies each post */
 [data-testid="tweetButton"]{
 	background-color: bt !important;
 } [data-testid="tweetButton"]:hover{
 	background-color: bt2 !important;
-} [data-testid="tweetButton"]>*>span{
-	color: str;
+}
+/* "Reply" button - fixed on top the page */
+[aria-label="Reply"] span{
+	color: str !important;
+}[aria-label="Reply"]{
+	background-color: bt2;
+	border-color: bd; /* doesn't really matter */
 }
 
 /* main page little header */
@@ -52,8 +58,9 @@ body /* both sidebars */
 	background-color: search;
 }
 
-/* notification icon (inside notifications menu) */
-[class*="r-1cvl2hr"]{
+[class*="r-1cvl2hr"] /* notification icon (inside notifications menu) */
+,[aria-label="Add post"]>div>svg /* "+" button while creating a post */
+{
 	color: bt !important;
 }
 
@@ -119,7 +126,8 @@ button[data-testid="tweetButtonInline"]:hover{
 /* strings */
 a[href="/compose/post"]>* /* "Post" big button */
 ,button[data-testid="tweetButtonInline"]>* /* "Post" small button */
-,a[href="/messages/compose"]>* /* "New message" */{
+,a[href="/messages/compose"]>* /* "New message" */
+{
 	color: str !important;
 }
 
@@ -162,7 +170,7 @@ svg[aria-label="Verified account"]{
 
 /* profile picture bg */
 [class="css-175oi2r r-1pi2tsx r-13qz1uu"]{
-	background-color: #242424 !important;
+	background-color: bg2 !important;
 }
 
 /* muted/block tweets */
@@ -174,7 +182,8 @@ svg[aria-label="Verified account"]{
 }
 
 /* loading circle */
-circle[r="14"]{
+circle[r="14"]
+,[stroke-linecap="round"]{
 	stroke: bt !important;
 }
 
@@ -191,7 +200,7 @@ div[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-
 ,button>[class*="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0"] /* any internal links ("show more replies" button) */
 ,[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41 r-11f147o"] /* yet another "show more replies" button */
 ,[class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1gs4q39 r-10ptun7 r-1janqcz"] /* svg of visibiliy scope on posting button on main timeline */
-,[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-b88u0q r-1awozwy r-6koalj r-18u37iz r-16y2uox r-1777fci"] /* text of visibility scope on posting button on main timeline */
+,button[aria-label][role="button"]>div>span /* reply scope switcher while creating a post */
 {
 	color: bt !important;
 }
