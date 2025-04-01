@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
-@version        1.0.3
+@version        1.0.4
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -24,6 +24,15 @@
 ,a[href="/messages/compose"][data-testid="empty_state_button_text"] /* "New message" button on dm*/
 {
 	background-color: bt !important;
+}
+
+/* "Reply" button */
+[data-testid="tweetButton"]{
+	background-color: bt !important;
+} [data-testid="tweetButton"]:hover{
+	background-color: bt2 !important;
+} [data-testid="tweetButton"]>*>span{
+	color: str;
 }
 
 /* main page little header */
@@ -179,7 +188,8 @@ div[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-
 ,button[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-n6v787 r-1cwl3u0 r-16dba41 r-6koalj r-1w6e6rj r-14gqq1x r-1loqt21 r-fdjqy7"] /* "translate bio" (maybe has more uses?) */
 ,a[role="link"] /* "view more" in bio + age of tweet on timeline (maybe has more uses?) */
 ,a[href*="http"] /* any external links */
-,a[href*="/i/status"] span /* any internal links ("show more replies" button) */
+,button>[class*="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0"] /* any internal links ("show more replies" button) */
+,[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41 r-11f147o"] /* yet another "show more replies" button */
 ,[class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1gs4q39 r-10ptun7 r-1janqcz"] /* svg of visibiliy scope on posting button on main timeline */
 ,[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-b88u0q r-1awozwy r-6koalj r-18u37iz r-16y2uox r-1777fci"] /* text of visibility scope on posting button on main timeline */
 {
