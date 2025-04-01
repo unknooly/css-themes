@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
-@version        1.0.2-20250331
+@version        1.0.3
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -19,112 +19,171 @@
 
 @-moz-document url-prefix("https://x.com") {
 
-	/* main page little header >> section selector border-bottom */
-	.css-175oi2r.r-xoduu5.r-1kihuf0.r-sdzlij.r-1p0dtai.r-hdaws3.r-s8bhmr.r-u8s1d.r-13qz1uu
-	,a[href="/messages/compose"][data-testid="empty_state_button_text"] /* "New message" button on dm*/
-	{
-		background-color: bt !important;
-	}
-	
-	/* main page little header */
-	[class*="r-ii8lfi"]{
-		background-color: rgba(24,24,24,0.8); 
-		/* if opacity is used, then it won't have the blur effect */
-	}
-	
-	body /* both sidebars */
-	,[class*="r-yfoy6g"] /* timeline and search bar (padded by another css file) */
-	{
-		background-color: bg !important;
-	}
-	
-	/* search bar */
-	[class="r-8erxvq"]{
-		background-color: search;
-	}
-	
-	/* notification icon (inside notifications menu) */
-	[class*="r-1cvl2hr"]{
-		color: bt !important;
-	}
-	
-	/* borders */
-	[class="r-1ila09b"] /* timeline horizonal lines */
-	,[class="r-18bvks7"] /* timeline vertical lines and media */
-	,[class="r-157er04"] /* thread/replies lines */
-	,[class="r-126aqm3"] /* border of div(interaction counters) inside tweet analytics */
-	{
-		border-color: bd !important;
-	}
-	
-	/* "Post" buttons aka old "Tweet" button */
-	[aria-label="Post"],
-	button[data-testid="tweetButtonInline"]{
-		background-color: bt !important;
-		border: 1px solid bd !important;
-	}
-	
-	/* "Post" buttons hovered */
-	[aria-label="Post"]:hover,
-	button[data-testid="tweetButtonInline"]:hover{
-		background-color: bt2 !important;
-	}
-	
-	/* strings */
-	a[href="/compose/post"]>* /* "Post" big button */
-	,button[data-testid="tweetButtonInline"]>* /* "Post" small button */
-	,a[href="/messages/compose"]>* /* "New message" */{
-		color: str !important;
-	}
-	
-	/* fix visibility of location svg on new Post inside main timeline */
-	[class*="r-icoktb"]{
-		opacity: 1;
-		/* this also fixes the location sharing icon */
-	}
-	
-	/* svgs of timeline posting menu */
-	svg[aria-hidden="true"][class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03"]{
-		fill: bt !important;
-	}
-	
-	/* verified symbol */
-	svg[aria-label="Verified account"]{
-		fill: bt !important;
-	}
-	
-	/* new unread posts (circle notification on left sidebar) */
-	[aria-label*="unread items"]{
-		background-color: bt;
-	} [aria-label*="unread items"]>span{
-		color: str;
-	}
-	
-	/* line inside tweet analytics */
-	[class=".r-kuekak"]{
-		background-color: bd;
-	}
-	
-	/* new notifications' bg on notification page */
-	[class="css-175oi2r r-1mmae3n r-3pj75a r-1w2mbsr r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]{
-		background-color: bg2 !important;
-	}
-	
-	
-	
-	/* strings */
-	div[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-16dba41"] /* div that shows more posts/replies */
-	,a[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1loqt21"] /* hashtags and @ (doesn't work on hovers, but maybe that's fine?) */
-	,a[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41 r-1s2bzr4 r-1loqt21"] /* "show all" button on notifications */
-	,div[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41"]>span[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"] span[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"] /* "and" in notifications when there are hidden @ of accounts */
-	,button[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-n6v787 r-1cwl3u0 r-16dba41 r-6koalj r-1w6e6rj r-14gqq1x r-1loqt21 r-fdjqy7"] /* "translate bio" (maybe has more uses?) */
-	,a[role="link"] /* "view more" in bio + age of tweet on timeline (maybe has more uses?) */
-	,a[href*="http"] /* any external links */
-	,a[href*="/i/"]>span /* any internal links ("show more replies" button) */
-	,[class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1gs4q39 r-10ptun7 r-1janqcz"] /* svg of visibiliy scope on posting button on main timeline */
-	,[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-b88u0q r-1awozwy r-6koalj r-18u37iz r-16y2uox r-1777fci"] /* text of visibility scope on posting button on main timeline */
-	{
-		color: bt !important;
-	}
-	
-	}/* moz-document */
+/* main page little header >> section selector border-bottom */
+.css-175oi2r.r-xoduu5.r-1kihuf0.r-sdzlij.r-1p0dtai.r-hdaws3.r-s8bhmr.r-u8s1d.r-13qz1uu
+,a[href="/messages/compose"][data-testid="empty_state_button_text"] /* "New message" button on dm*/
+{
+	background-color: bt !important;
+}
+
+/* main page little header */
+[class*="r-ii8lfi"]{
+	background-color: rgba(24,24,24,0.8); 
+	/* if opacity is used, then it won't have the blur effect */
+}
+
+body /* both sidebars */
+,[class*="r-yfoy6g"] /* timeline and search bar (padded by another css file) */
+{
+	background-color: bg !important;
+}
+
+/* search bar */
+[class="r-8erxvq"]{
+	background-color: search;
+}
+
+/* notification icon (inside notifications menu) */
+[class*="r-1cvl2hr"]{
+	color: bt !important;
+}
+
+/* borders */
+[class*="r-1ila09b"] /* timeline horizonal lines */
+,[class*="r-18bvks7"] /* timeline vertical lines and media */
+,[class*="r-126aqm3"] /* border of div(interaction counters) inside tweet analytics */
+,[class*="r-rs99b7 r-lrvibr r-6gpygo"] /* inside other user's profile */
+,button[aria-label*="Following "] /* "Following"/"Unfollow" button */
+{
+	border-color: bd !important;
+}
+
+/* "Unfollow" button */
+[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"]{
+	background-color: #AC1D1B;
+} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"] span{
+	color: white !important;
+} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"]>*>span::before{
+	content:"💔 ";
+}
+
+/* "Follow" button */
+[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]{
+	background-color: bt !important;
+} [aria-label*="Follow "] [class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"]{
+	color: str;
+} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"]{
+	background-color: #1BAC72;
+}
+[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"]>*>span::before{
+	content:"💓 ";
+} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"] span{
+	color: white !important;
+}
+
+/* media bg (while hovering, it was changing colors) */
+[class*="r-18bvks7"]
+{
+	background-color: transparent;
+}
+
+/* line inside tweet analytics and between timeline posts */
+[class*="r-kuekak"]
+,[class*="r-157er04"] /* thread/replies lines */
+{
+	background-color: bd;
+}
+
+/* "Post" buttons aka old "Tweet" button */
+[aria-label="Post"],
+button[data-testid="tweetButtonInline"]{
+	background-color: bt !important;
+	border: 1px solid bd !important;
+}
+
+/* "Post" buttons hovered */
+[aria-label="Post"]:hover,
+button[data-testid="tweetButtonInline"]:hover{
+	background-color: bt2 !important;
+}
+
+/* strings */
+a[href="/compose/post"]>* /* "Post" big button */
+,button[data-testid="tweetButtonInline"]>* /* "Post" small button */
+,a[href="/messages/compose"]>* /* "New message" */{
+	color: str !important;
+}
+
+/* fix visibility of location svg on new Post inside main timeline */
+[class*="r-icoktb"]{
+	opacity: 1;
+	/* this also fixes the location sharing icon */
+}
+
+/* svgs of timeline posting menu */
+svg[aria-hidden="true"][class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-z80fyv r-19wmn03"]{
+	fill: bt !important;
+}
+
+/* verified symbol */
+svg[aria-label="Verified account"]{
+	fill: bt !important;
+}
+
+/* new unread posts (circle notification on left sidebar) */
+[aria-label*="unread items"]{
+	background-color: bt;
+} [aria-label*="unread items"]>span{
+	color: str;
+}
+
+/* new notifications' bg on notification page */
+[class="css-175oi2r r-1mmae3n r-3pj75a r-1w2mbsr r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]{
+	background-color: bg2 !important;
+}
+
+/* "Follows you" div */
+[data-testid="userFollowIndicator"]{
+	background-color: bg2;
+	position: relative; top: 2px;
+	margin: 5px;
+	padding: 5px;
+	font-size: 0.8em;
+}
+
+/* profile picture bg */
+[class="css-175oi2r r-1pi2tsx r-13qz1uu"]{
+	background-color: #242424 !important;
+}
+
+/* muted/block tweets */
+[class*="r-g6ijar"]{
+	background-color: bg2 !important;
+	border-color: bd !important;
+	/* line below looks cool but it's out of place */
+	/* box-shadow: 0 0 4px 1px black; */
+}
+
+/* loading circle */
+circle[r="14"]{
+	stroke: bt !important;
+}
+
+
+
+/* strings */
+div[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-16dba41"] /* div that shows more posts/replies */
+,a[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1loqt21"] /* hashtags and @ (doesn't work on hovers, but maybe that's fine?) */
+,a[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41 r-1s2bzr4 r-1loqt21"] /* "show all" button on notifications */
+,div[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41"]>span[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"] span[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"] /* "and" in notifications when there are hidden @ of accounts */
+,button[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-n6v787 r-1cwl3u0 r-16dba41 r-6koalj r-1w6e6rj r-14gqq1x r-1loqt21 r-fdjqy7"] /* "translate bio" (maybe has more uses?) */
+,a[role="link"] /* "view more" in bio + age of tweet on timeline (maybe has more uses?) */
+,a[href*="http"] /* any external links */
+,a[href*="/i/status"] span /* any internal links ("show more replies" button) */
+,[class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1gs4q39 r-10ptun7 r-1janqcz"] /* svg of visibiliy scope on posting button on main timeline */
+,[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-b88u0q r-1awozwy r-6koalj r-18u37iz r-16y2uox r-1777fci"] /* text of visibility scope on posting button on main timeline */
+{
+	color: bt !important;
+}
+
+}/* moz-document */
