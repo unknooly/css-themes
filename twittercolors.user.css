@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
-@version        1.0.5
+@version        1.0.6
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -14,6 +14,7 @@
 @var color bt "Buttons and texts" #e699eb
 @var color bt2 "Buttons when hovered" #d659de
 @var color str "Text inside the buttons" black
+@var color str2 "Alternative text inside buttons" white
 
 ==/UserStyle== */
 
@@ -78,23 +79,25 @@ body /* both sidebars */
 [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"]{
 	background-color: #AC1D1B;
 } [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"] span{
-	color: white !important;
+	color: str2 !important;
 } [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"]>*>span::before{
 	content:"💔 ";
+} [aria-label*="Following "] span[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"]{
+	color: str;
 }
 
 /* "Follow" button */
-[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]{
+[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]{
 	background-color: bt !important;
 } [aria-label*="Follow "] [class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"]{
 	color: str;
-} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"]{
+} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"]{
 	background-color: #1BAC72;
 }
-[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"]>*>span::before{
+[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"]>*>span::before{
 	content:"💓 ";
-} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"] span{
-	color: white !important;
+} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"] span{
+	color: str2 !important;
 }
 
 /* media bg (while hovering, it was changing colors) */
