@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
-@version        1.0.6
+@version        1.0.7
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -75,30 +75,37 @@ body /* both sidebars */
 	border-color: bd !important;
 }
 
-/* "Unfollow" button */
-[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"]{
-	background-color: #AC1D1B;
-} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"] span{
-	color: str2 !important;
-} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"]>*>span::before{
-	content:"💔 ";
-} [aria-label*="Following "] span[class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"]{
-	color: str;
-}
-
-/* "Follow" button */
-[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]{
-	background-color: bt !important;
-} [aria-label*="Follow "] [class="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3"]{
-	color: str;
+/* "Follow button" */
+[aria-label*="Follow "] span{
+	color: str; /* regular span */
+} [aria-label*="Follow "][class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]{
+	background-color: str2 !important; /* regular bg, default is already white */
 } [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"]{
-	background-color: #1BAC72;
+	background-color: #1BAC72; /* bg when hover */
 }
 [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"]>*>span::before{
-	content:"💓 ";
+	content:"💓 "; /* string when hover */
 } [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-jc7xae r-1ny4l3l"] span{
-	color: str2 !important;
+	color: str; /* span when hover, default is already black */
 }
+
+/* "Following" button */
+[aria-label*="Following "][class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]{
+	background-color: bg2 !important; /* regular bg */
+} [aria-label*="Following "] span{
+	color: str2; /* regular span */
+}
+
+/* "Unfollow" button */
+[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"]{
+	background-color: #AC1D1B; /* background when hover */
+} [class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-qqmkd0 r-1ny4l3l"]>*>span::before{
+	content:"💔 "; /* string when hover */
+}
+
+/*
+	"Follow" is a button by itself, "Following" and its hover "Unfollow" is the other button
+*/
 
 /* media bg (while hovering, it was changing colors) */
 [class*="r-18bvks7"]
