@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
-@version        1.0.7
+@version        1.0.8
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -38,8 +38,8 @@
 [aria-label="Reply"] span{
 	color: str !important;
 }[aria-label="Reply"]{
-	background-color: bt2;
-	border-color: bd; /* doesn't really matter */
+	background-color: bt !important;
+	border-color: bd !important; /* doesn't really matter */
 }
 
 /* main page little header */
