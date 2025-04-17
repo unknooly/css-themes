@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.5
+@version        1.0.6
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -31,6 +31,7 @@
 
 .css-175oi2r.r-yfoy6g.r-18bvks7.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x /* main elements */
 ,.css-175oi2r.r-18bvks7.r-1867qdf.r-1phboty.r-1ifxtd0.r-1udh08x.r-1niwhzg.r-1yadl64 /* terms of service & stuff */
+,[class="css-175oi2r r-vacyoi r-ttdzmv"]>[class="css-175oi2r r-1ifxtd0"] /* "Subscribe to Premium" ad */
 {
     /* removes right side bar */
     display: none !important;
