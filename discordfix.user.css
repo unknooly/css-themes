@@ -36,6 +36,7 @@
 ,[class^="upsellContainer"] /* "Amp up your profile" ad insile small profile pop up */
 ,section>[class="header__67a11"],[role="radiogroup"]>div>[class="header_a00e6e"] /* nitro ads on Appearance menu on configs */
 ,div>[aria-label="Send a gift"] /* "Send a gift" button on message box */
+,[class*="hiddenWhileNotHovered"] /* Discord's new game popup */
 {
     display: none;
 }
@@ -45,6 +46,7 @@
 ,[aria-label="Family Center"] /* family center */
 ,[class*="vc-settings-donate"] /* donation request on plugin page */
 ,[class*="avatarDecoration"] /* avatar decoration */
+,[class*="nameplated"]>div:has([alt*="NAMEPLATES"]) /* nameplates */
 {
     display: none !important;
 }
