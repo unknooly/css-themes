@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @update URL     https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.6
+@version        1.0.7
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -94,6 +94,7 @@ div{
 ,[aria-label="Send a tip"] /* send a tip button on someone else's profile */
 ,[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([href="/explore"]) /* explore button that appears after trend stuff */
 ,[data-testid="trend"] /* some random trend stuff that appears on timeline */
+,[role="tooltip"] /* tooltips */
 
 /* ADS */
 ,[class$="css-175oi2r r-494qqr"]:has([href^="/i/premium_sign_up"]) /* GoAd-freeWithPremium+ tweet */
