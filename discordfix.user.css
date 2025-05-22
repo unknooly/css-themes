@@ -18,6 +18,11 @@
     color: white !important;
 }
 
+/* makes new UI less bad */
+[class="panels_c48ade"],a,[class*="channelTextArea"]{
+    border-radius: 0px !important;
+}
+
 /* ADS */
 [aria-label="Merch"] /* merch */
 ,[aria-label="Billing"] /* billing */
@@ -37,6 +42,8 @@
 ,section>[class="header__67a11"],[role="radiogroup"]>div>[class="header_a00e6e"] /* nitro ads on Appearance menu on configs */
 ,div>[aria-label="Send a gift"] /* "Send a gift" button on message box */
 ,[class*="hiddenWhileNotHovered"] /* Discord's new game popup */
+,[class*="clickTrapContainer"] /* "new Perks" pop up */
+,li:has([aria-label="Server Boosts"]) /* "Server Boosts" button inside server's channel list (top position) */
 {
     display: none;
 }
@@ -47,6 +54,8 @@
 ,[class*="vc-settings-donate"] /* donation request on plugin page */
 ,[class*="avatarDecoration"] /* avatar decoration */
 ,[class*="nameplated"]>div:has([alt*="NAMEPLATES"]) /* nameplates */
+,[class*="floatingBars"] /* new server's channel guide */
+,[class*="channelNotice"] /* "This server requires members with moderation powers to have Multi-Factor Authentication." */
 {
     display: none !important;
 }
@@ -57,10 +66,5 @@
 ,[class^="vc-special-card"] /* vencord ad */
 {
     display: none !important;
-}
-
-/* makes new UI less bad */
-[class="panels_c48ade"],a,[class*="channelTextArea"]{
-    border-radius: 0px !important;
 }
 }/* moz-document */
