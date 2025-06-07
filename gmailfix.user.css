@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           GmailFix
+@namespace      https://github.com/unknooly/css-themes
+@updateURL      https://github.com/unknooly/css-themes/raw/main/gmailfix.user.css
+@version        1.0.0
+@description    Fix some stuff on gmail
+@author         Chaos (https://github.com/unknooly)
+==/UserStyle== */
+
+@-moz-document url-prefix("mail.google.com") {
+
+/* Compose (an email) button */
+.WR .z0>.L3
+,.WR .z0>.L3:focus
+{
+	background-color: black;
+	color: lightgray;
+	font-weight: bold;
+	box-shadow: 0 0 4px 4px #181818;
+}
+
+[jscontroller="xdV2Hc"]:has([aria-label="Try Gemini"]) /* Gemini button */
+,[class="I6agWe"] /* Upgrade button */
+{
+	display: none !important;
+}
+
+}/* moz-document */
