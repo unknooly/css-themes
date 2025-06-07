@@ -5,10 +5,10 @@
 @version        1.0.7
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
-
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://x.com") {
+
 /* makes media simply better */
 [role="article"] > * *{
     background-size: contain !important;
@@ -115,4 +115,5 @@ div{
 {
 	display: none !important;
 }
+
 }/* moz-document */

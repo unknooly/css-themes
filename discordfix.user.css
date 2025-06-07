@@ -5,10 +5,10 @@
 @version        1.0.1
 @description    Fix some stuff on Discord
 @author         Chaos (https://github.com/unknooly)
-
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://discord.com") {
+
 /* highlight plugins on configs */
 [class="vc-plugins item_b3f026 themed_b3f026"]{
     background-color: darkgreen !important;
@@ -67,4 +67,5 @@
 {
     display: none !important;
 }
+
 }/* moz-document */

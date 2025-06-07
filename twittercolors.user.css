@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
-@updateURL		https://github.com/unknooly/css-themes/raw/main/twittercolor.user.css
+@updateURL		https://github.com/unknooly/css-themes/raw/main/twittercolors.user.css
 @version        1.0.8
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
@@ -16,7 +16,6 @@
 @var color bt2 "Buttons when hovered" #d659de
 @var color str "Text inside the buttons" black
 @var color str2 "Alternative text inside buttons" white
-
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://x.com") {
