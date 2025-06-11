@@ -101,6 +101,7 @@ div{
 ,[href="/i/premium_sign_up"]/* hides premium button on left sidebar */
 ,[class="css-175oi2r r-1ifxtd0"]>[class*="r-1udh08x r-18u37iz r-1h0z5md"]:has(img[src*="premium_nux/analytics"]) /* "Access your post analytics" on own user tweet */
 ,[class="css-175oi2r r-1ifxtd0"]:has([src*="premium"]) /* ad padding */
+,[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([src*="discount"]) /* premium ad (discount) */
 
 /* Grok and AI */
 ,a[href="/i/grok"] /* Grok */
