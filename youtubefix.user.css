@@ -2,7 +2,7 @@
 @name           YoutubeFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css
-@version        1.0.0
+@version        1.0.1
 @description    Fix some stuff on Youtube
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -18,7 +18,7 @@ ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
 ,[class*="html5-video-player"]>[class*="ytp-progress-bar"] /* new miniplayer in test(?) */
 ,[class="ytp-bezel-text-hide"] /* pause/unpause over-video controller */
 ,[id="chips"] /* type of content filter */
-,[id="header"] /* space behind the filters */
+,[id="header"][class="style-scope ytd-rich-grid-renderer"] /* space behind the filters */
 {
     display: none !important;
 }
