@@ -1,0 +1,43 @@
+/* ==UserStyle==
+@name           YoutubeFix
+@namespace      https://github.com/unknooly/css-themes
+@updateURL      https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css
+@version        1.0.0
+@description    Fix some stuff on Youtube
+@author         Chaos (https://github.com/unknooly)
+==/UserStyle== */
+
+@-moz-document url-prefix("https://www.youtube.com") {
+
+/* left side menu */
+ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
+,[class="style-scope ytd-guide-renderer"]:nth-of-type(3) /* Explore */
+,[class="style-scope ytd-guide-renderer"]:nth-of-type(4) /* MoreFromYoutube */
+,[id="footer"][class="style-scope ytd-guide-renderer"] /* footer */
+,[class="ytp-miniplayer-ui"] /* new miniplayer in test(?) */
+,[class*="html5-video-player"]>[class*="ytp-progress-bar"] /* new miniplayer in test(?) */
+,[class="ytp-bezel-text-hide"] /* pause/unpause over-video controller */
+,[id="chips"] /* type of content filter */
+,[id="header"] /* space behind the filters */
+{
+    display: none !important;
+}
+
+/* header */
+#frosted-glass.with-chipbar.ytd-app
+,ytd-masthead[frosted-glass-mode=without-chipbar] #background.ytd-masthead
+{
+	height: 56px;
+	backdrop-filter: none !important;
+	background-color: #0f0f0f !important;
+	box-shadow: 0px 0px 30px 5px black;
+}
+
+/* square thumbs/videos */
+[id="thumbnail"]
+,[id="ytd-player"]
+{
+    border-radius: 0 !important;
+}
+
+} /* moz-document */
