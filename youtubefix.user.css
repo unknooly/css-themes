@@ -2,7 +2,7 @@
 @name           YoutubeFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css
-@version        1.0.2
+@version        1.0.3
 @description    Fix some stuff on Youtube
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -44,6 +44,11 @@ ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
 [id="contents"]>[class*="ytd-rich-grid-renderer"]{
     box-shadow: none !important;
     background-color: transparent !important;
+}
+
+/* subcribe button animation */
+[class="smartimation__border"]{
+    display: none !important;
 }
 
 } /* moz-document */
