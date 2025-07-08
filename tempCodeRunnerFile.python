@@ -1,0 +1,7 @@
+import math
+
+w=70
+h=39.3
+d=math.sqrt(w**2+h**2)
+
+print(d, 10**2 + 10**2)
