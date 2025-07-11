@@ -1,5 +1,7 @@
 # Requires:
-[Stylus extension](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+Stylus extension:
+- Chromium: https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/styl-us/
 
 # Quick install:
 - [Discord Fix](https://github.com/unknooly/css-themes/raw/main/discordfix.user.css)
