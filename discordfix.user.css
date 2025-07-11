@@ -43,6 +43,7 @@
 ,div>[aria-label="Send a gift"] /* "Send a gift" button on message box */
 ,[class*="hiddenWhileNotHovered"] /* Discord's new game popup */
 ,li:has([aria-label="Server Boosts"]) /* "Server Boosts" button inside server's channel list (top position) */
+,[class="notice__6e2b9 colorPremiumTier2__6e2b9 colorPremium__6e2b9"] /* huge topbar ad strip */
 {
     display: none;
 }
