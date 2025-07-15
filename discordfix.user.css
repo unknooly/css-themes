@@ -2,7 +2,7 @@
 @name           DiscordFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/discordfix.user.css
-@version        1.0.4
+@version        1.0.5
 @description    Fix some stuff on Discord
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -44,6 +44,7 @@
 ,[class*="hiddenWhileNotHovered"] /* Discord's new game popup */
 ,li:has([aria-label="Server Boosts"]) /* "Server Boosts" button inside server's channel list (top position) */
 ,[class="notice__6e2b9 colorPremiumTier2__6e2b9 colorPremium__6e2b9"] /* huge topbar ad strip */
+,[class="layerContainer_da8173"] /* "Earn orbs with quests" popup */
 {
     display: none;
 }
