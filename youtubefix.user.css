@@ -2,7 +2,7 @@
 @name           YoutubeFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css
-@version        1.0.5
+@version        1.0.6
 @description    Fix some stuff on Youtube
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -10,18 +10,19 @@
 @-moz-document url-prefix("https://www.youtube.com") {
 
 /* left side menu */
-ytd-rich-section-renderer:has([aria-label*="Shorts"]) /* Shorts */
+ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
 ,[class="style-scope ytd-guide-renderer"]:nth-of-type(3) /* Explore */
 ,[class="style-scope ytd-guide-renderer"]:nth-of-type(4) /* MoreFromYoutube */
 ,[id="footer"][class="style-scope ytd-guide-renderer"] /* footer */
-,[class="ytp-miniplayer-ui"] /* new miniplayer in test(?) */
-,[class*="html5-video-player"]>[class*="ytp-progress-bar"] /* new miniplayer in test(?) */
-,[class="ytp-bezel-text-hide"] /* pause/unpause over-video controller */
-,[id="chips"] /* type of content filter */
-,[id="header"][class="style-scope ytd-rich-grid-renderer"] /* space behind the filters */
+
 /* others */
+/* ,[class="ytp-miniplayer-ui"] */ /* new miniplayer in test(?) */
+,[class="ytp-bezel-text-hide"] /* pause/unpause over-video controller */
+,[id="header"][class="style-scope ytd-rich-grid-renderer"] /* content-type filter (all, music, mixes, gaming...) */
 ,[class="smartimation__border"] /* subcribe button animation */
 ,[class="ytGridShelfViewModelHost ytd-item-section-renderer ytGridShelfViewModelHostHasBottomButton"] /* shorts on search page */
+,[src*="https://www.gstatic.com/youtube/img/promos"]
+/* ,ytd-rich-item-renderer:has([class*="ytd-badge-supported-renderer"]) */ /* featured video */ /* currently affecting other places (inside user channel) */
 {
     display: none !important;
 }
@@ -37,8 +38,8 @@ ytd-rich-section-renderer:has([aria-label*="Shorts"]) /* Shorts */
 }
 
 /* square thumbs/videos */
-[id="thumbnail"]
-,[id="ytd-player"]
+[class*="ThumbnailViewModel"]
+,[class="ytdMiniplayerComponentContent"]
 {
     border-radius: 0 !important;
 }
