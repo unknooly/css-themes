@@ -2,7 +2,7 @@
 @name           YoutubeFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css
-@version        1.0.6
+@version        1.0.7
 @description    Fix some stuff on Youtube
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -13,7 +13,6 @@
 ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
 ,[class="style-scope ytd-guide-renderer"]:nth-of-type(3) /* Explore */
 ,[class="style-scope ytd-guide-renderer"]:nth-of-type(4) /* MoreFromYoutube */
-,[id="footer"][class="style-scope ytd-guide-renderer"] /* footer */
 
 /* others */
 /* ,[class="ytp-miniplayer-ui"] */ /* new miniplayer in test(?) */
@@ -22,7 +21,7 @@ ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
 ,[class="smartimation__border"] /* subcribe button animation */
 ,[class="ytGridShelfViewModelHost ytd-item-section-renderer ytGridShelfViewModelHostHasBottomButton"] /* shorts on search page */
 ,[src*="https://www.gstatic.com/youtube/img/promos"]
-/* ,ytd-rich-item-renderer:has([class*="ytd-badge-supported-renderer"]) */ /* featured video */ /* currently affecting other places (inside user channel) */
+,ytd-rich-item-renderer:has([class*="badge-style-type-members-only"]) /* featured video */
 {
     display: none !important;
 }
