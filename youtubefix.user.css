@@ -2,7 +2,7 @@
 @name           YoutubeFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css
-@version        1.0.7
+@version        1.0.8
 @description    Fix some stuff on Youtube
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -11,8 +11,9 @@
 
 /* left side menu */
 ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
-,[class="style-scope ytd-guide-renderer"]:nth-of-type(3) /* Explore */
-,[class="style-scope ytd-guide-renderer"]:nth-of-type(4) /* MoreFromYoutube */
+,[class="style-scope ytd-guide-renderer"]:nth-of-type(3) /* Explore section */
+,[class="style-scope ytd-guide-renderer"]:nth-of-type(4) /* MoreFromYoutube section */
+,[id="footer"] /* footer section (copyright, terms, about etc) */
 
 /* others */
 /* ,[class="ytp-miniplayer-ui"] */ /* new miniplayer in test(?) */
