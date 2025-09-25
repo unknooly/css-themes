@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.9
+@version        1.0.10
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -104,6 +104,7 @@ div{
 ,[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([src*="discount"]) /* premium ad (discount) */
 
 /* Grok and AI */
+,[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-n6v787 r-1cwl3u0 r-16dba41 r-9aw3ui r-1ceczpf r-1h8ys4a r-fdjqy7 r-1mnahxq"] /* translate bio */
 ,a[href="/i/grok"] /* Grok */
 ,[role="presentation"]:has( [aria-label="Generate image"]) /* Generate image button */
 ,[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(svg) /* AI profile summary */
