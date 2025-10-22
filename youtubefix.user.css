@@ -2,7 +2,7 @@
 @name           YoutubeFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css
-@version        1.0.8
+@version        1.0.9
 @description    Fix some stuff on Youtube
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -25,6 +25,11 @@ ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
 ,ytd-rich-item-renderer:has([class*="badge-style-type-members-only"]) /* featured video */
 {
     display: none !important;
+}
+
+/* animations */
+* *{
+    transition: none !important;
 }
 
 /* header */
