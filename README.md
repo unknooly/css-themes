@@ -10,3 +10,4 @@ Stylus extension:
     - Requires dim theme + purple color, which can be changed at: https://x.com/settings/display
 - [Twitter Fix](https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css)
 - [Youtube Fix](https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css)
+- [Reddit Fix](https://github.com/unknooly/css-themes/raw/main/redditfix.user.css)
