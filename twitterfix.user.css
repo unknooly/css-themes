@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.11
+@version        1.0.12
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -115,7 +115,7 @@ div{
 ,[aria-label="Profile Summary"] /* AI button on profile */
 ,[class="css-175oi2r r-dnmrzs r-nsbfu8"]:has([href*="premium"]) /* "You aren't verified yet" message on profile */
 ,[class="css-175oi2r"]>[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([href*="/i/grok"]) /* reply with grok "DeepSearch" */
-,[aria-label="Get Premium for just $5"] /* "Get Premium" ad on main page */
+,[aria-label*="Get Premium for"] /* "Get Premium" ad on main page */
 {
 	display: none !important;
 }
