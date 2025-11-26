@@ -2,7 +2,7 @@
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
 @updateURL		https://github.com/unknooly/css-themes/raw/main/twittercolors.user.css
-@version        1.0.8
+@version        1.0.9
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -191,6 +191,22 @@ svg[aria-label="Verified account"]{
 	/* box-shadow: 0 0 4px 1px black; */
 }
 
+/* block notification */
+[role="alert"]{
+    background-color: bt;
+} [role="alert"] span{
+    color: str !important;
+}
+
+/* blocked profile "View posts" */
+[data-testid="empty_state_button_text"]{
+    background-color: bt !important;
+} [data-testid="empty_state_button_text"]:hover{
+    background-color: bt2 !important;
+} [data-testid="empty_state_button_text"] span{
+    color: str;
+}
+
 /* loading circle */
 circle[r="14"]
 ,[stroke-linecap="round"]{
@@ -207,7 +223,6 @@ div[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-
 ,button[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-n6v787 r-1cwl3u0 r-16dba41 r-6koalj r-1w6e6rj r-14gqq1x r-1loqt21 r-fdjqy7"] /* "translate bio" (maybe has more uses?) */
 ,a[role="link"] /* "view more" in bio + age of tweet on timeline (maybe has more uses?) */
 ,a[href*="http"] /* any external links */
-,button>[class*="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0"] /* any internal links ("show more replies" button) */
 ,[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41 r-11f147o"] /* yet another "show more replies" button */
 ,[class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1gs4q39 r-10ptun7 r-1janqcz"] /* svg of visibiliy scope on posting button on main timeline */
 ,button[aria-label][role="button"]>div>span /* reply scope switcher while creating a post */
