@@ -2,20 +2,26 @@
 @name           DiscordFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/discordfix.user.css
-@version        1.0.5
+@version        1.1.0
 @description    Fix some stuff on Discord
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://discord.com") {
 
-/* highlight plugins on configs */
-[class="vc-plugins item_b3f026 themed_b3f026"]{
-    background-color: darkgreen !important;
-    color: white !important;
-} [class="vc-plugins item_b3f026 themed_b3f026"]:hover{
-    background-color: darkgreen !important;
-    color: white !important;
+* *{
+    /* remove animations */
+    transition: none !important;
+    animation: none !important;
+}
+
+/* highlight plugins on settings */
+[data-settings-sidebar-item="vencord_plugins_panel"]>div{
+    background-color: #adaeb4 !important;
+    color: black !important;
+} [data-settings-sidebar-item="vencord_plugins_panel"]>div:hover{
+    background-color: #2e2e2e !important;
+    color: #adaeb4 !important;
 }
 
 /* makes new UI less bad */
@@ -23,46 +29,54 @@
     border-radius: 0px !important;
 }
 
-/* ADS */
-[aria-label="Merch"] /* merch */
-,[aria-label="Billing"] /* billing */
-,[aria-label="Gift Inventory"] /* gift inventory */
-,[aria-label="Subscriptions"] /* subscriptions */
-,[class="premiumTab__581ea item_b3f026 themed_b3f026"] /* nitro */
-,[class="item_b3f026 themed_b3f026"]:nth-of-type(15) /* server boost */
-,[class="header_b3f026"] /* billing settings */
-,[class="separator_b3f026"]:nth-of-type(12) /* separator of billing section */
-,[class="channel__972a0 container_e45859"]:has([href="/shop"]) /* Shop button on top of dms */
-,[class="channel__972a0 container_e45859"]:has([href="/store"]) /* Nitro button on top of dms */
+/* ADS ON "LEGACY SETTINGS" */
+[aria-label="Billing"] /* billing (old settings UI) */
+,[aria-label="Gift Inventory"] /* gift inventory (old settings UI) */
+,[aria-label="Subscriptions"] /* subscriptions (old settings UI) */
+,[aria-label="Nitro"] /* nitro (old settings UI) */
+,section>[class="header__67a11"],[role="radiogroup"]>div>[class="header_a00e6e"] /* nitro ads on Appearance menu on configs (old settings UI?) */
+
+/* GERENAL ADS */
+,[aria-label="Merch"] /* merch */
+/*,[class="aa8da23faa27393c-item aa8da23faa27393c-themed"]:nth-of-type(20)*/ /* server boost (not working) */
+,[aria-label="Billing Settings"] /* Billing Settings */
+,[class="header_b3f026"] /* billing settings (??) */
+/*,[class="separator_b3f026"]:nth-of-type(12)*/ /* separator of billing section (not working) */
+,[class="channel__972a0 container_e45859"]:has([href="/shop"]) /* Shop button on top of dms  (CHANGE) */
+,[class="channel__972a0 container_e45859"]:has([href="/store"]) /* Nitro button on top of dms (CHANGE) */
 ,[class="notice_be03aa colorPremiumTier2_be03aa colorPremium_be03aa"] /* "You have 3 days Nitro trial!" */
 ,[class*="floatingNitroUpsell"] /* nitro banner (inside profile editor) */
 ,div>div[class*="tryItOutSection"] /* nitro preview (inside profile editor) */
 ,[class="container__8279f"] /* nitro ad on top of page (inside profile editor) */
-,[class^="upsellContainer"] /* "Amp up your profile" ad insile small profile pop up */
-,section>[class="header__67a11"],[role="radiogroup"]>div>[class="header_a00e6e"] /* nitro ads on Appearance menu on configs */
+,[class^="upsellContainer"] /* "Amp up your profile" ad inside small profile pop up */
 ,div>[aria-label="Send a gift"] /* "Send a gift" button on message box */
 ,[class*="hiddenWhileNotHovered"] /* Discord's new game popup */
 ,li:has([aria-label="Server Boosts"]) /* "Server Boosts" button inside server's channel list (top position) */
 ,[class="notice__6e2b9 colorPremiumTier2__6e2b9 colorPremium__6e2b9"] /* huge topbar ad strip */
+,[class="a230e00e14310f70-wrapper"] /* "The holidays are here!" 2026 fixed-position everywhere popup */
+,[class="_972a0d22c8afa7f0-channel e45859d60799ad7c-container"]:has([href="/store"]) /* Store  button on dm */
 {
     display: none;
 }
 
 /* PERSONAL OPTIONS */
-[class="footer__214dc"] /* "Discover" button */
-,[aria-label="Family Center"] /* family center */
+[class="footer__214dc"] /* "Discover" button (old settings UI) */
+,[aria-label="Family Center"] /* family center (old settings UI) */
 ,[class*="vc-settings-donate"] /* donation request on plugin page */
-,[class*="avatarDecoration"] /* avatar decoration */
+,[class*="avatarDecoration"] /* avatar decorations */
 ,[class*="nameplated"]>div:has([src*="https://cdn.discordapp.com/assets/collectibles/nameplates"]) /* nameplates */
 ,[class*="floatingBars"] /* new server's channel guide */
 ,[class*="channelNotice"] /* "This server requires members with moderation powers to have Multi-Factor Authentication." */
+,[class*="helpMessageContainer"] /* help/tutorial messages */
+,[class="_553bf02027ac2419-wrapper"]:has([href="/quest-home"]) /* Quests button on dm */
+,[class="_972a0d22c8afa7f0-channel e45859d60799ad7c-container"]:has([href="/shop"]) /* Shop  button on dm */
 {
     display: none !important;
 }
 
 /* VENCORD OPTIONS */
 [class="vc-settings-quickActions-pill"]:has([class*="vc-restart-icon"]) /* "Relaunch Discord" (vencord) button */
-,[aria-label^="Click to react"],[aria-label^="Add Reaction"],[aria-label^="Reply"],[aria-label="Forward"],[aria-label="More"],[class="separator_f84418"],[class="separator_e986d9"] /* message buttons when hover, only allowing the "raw" (vencord) button to stay */
+,[aria-label^="Click to react"],[aria-label^="Add Reaction"],[aria-label^="Reply"],[aria-label="Forward"],[aria-label="More"],[class="separator_f84418"],[class="separator_e986d9"] /* message buttons when hovering a message, only allowing the "raw" (vencord) button to stay */
 ,[class^="vc-special-card"] /* vencord ad */
 {
     display: none !important;
