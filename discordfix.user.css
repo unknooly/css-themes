@@ -12,7 +12,6 @@
 * *{
     /* remove animations */
     transition: none !important;
-    animation: none !important;
 }
 
 /* highlight plugins on settings */
