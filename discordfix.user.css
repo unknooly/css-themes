@@ -2,7 +2,7 @@
 @name           DiscordFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/discordfix.user.css
-@version        1.1.1
+@version        1.1.2
 @description    Fix some stuff on Discord
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -54,6 +54,7 @@
 ,[class="notice__6e2b9 colorPremiumTier2__6e2b9 colorPremium__6e2b9"] /* huge topbar ad strip */
 ,[class="a230e00e14310f70-wrapper"] /* "The holidays are here!" 2026 fixed-position everywhere popup */
 ,[class="_972a0d22c8afa7f0-channel e45859d60799ad7c-container"]:has([href="/store"]) /* Store  button on dm */
+,[class="notice__29487 theme-dark theme-darker images-dark"] /* "You have 3 days left to get a free trial of Nitro" */
 {
     display: none;
 }
