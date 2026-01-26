@@ -2,7 +2,7 @@
 @name           DiscordFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/discordfix.user.css
-@version        1.1.0
+@version        1.1.1
 @description    Fix some stuff on Discord
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -69,6 +69,7 @@
 ,[class*="helpMessageContainer"] /* help/tutorial messages */
 ,[class="_553bf02027ac2419-wrapper"]:has([href="/quest-home"]) /* Quests button on dm */
 ,[class="_972a0d22c8afa7f0-channel e45859d60799ad7c-container"]:has([href="/shop"]) /* Shop  button on dm */
+,[class="notice__6e2b9 colorBrand__6e2b9"] /* "How is blocking users working for you?" */
 {
     display: none !important;
 }
