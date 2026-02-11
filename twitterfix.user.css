@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.0.16
+@version        1.1.0
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -29,8 +29,9 @@
     margin: 0px !important;
 }
 
-.css-175oi2r.r-yfoy6g.r-18bvks7.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1udh08x /* main elements */
-,.css-175oi2r.r-18bvks7.r-1867qdf.r-1phboty.r-1ifxtd0.r-1udh08x.r-1niwhzg.r-1yadl64 /* terms of service & stuff */
+[aria-label="Trending"]>div>[class="css-175oi2r"] /* line separator below search bar */
+,[class="css-175oi2r r-kemksi r-1kqtdi0 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x"] /* main elements */
+,[class="css-175oi2r r-1kqtdi0 r-1867qdf r-1phboty r-1ifxtd0 r-1udh08x r-1niwhzg r-1yadl64"] /* terms of service & stuff */
 ,[class="css-175oi2r r-vacyoi r-ttdzmv"]>[class="css-175oi2r r-1ifxtd0"] /* "Subscribe to Premium" ad */
 {
     /* removes right side bar */
@@ -42,10 +43,10 @@ div{
     transition-duration: 0ms !important;
 }
 
-.css-175oi2r.r-1awozwy.r-aqfbo4.r-yfoy6g.r-18u37iz.r-1h3ijdo.r-6gpygo.r-15ysp7h.r-1xcajam.r-ipm5af.r-136ojw6.r-1hycxz{
+[class="css-175oi2r r-1awozwy r-aqfbo4 r-kemksi r-18u37iz r-1h3ijdo r-6gpygo r-15ysp7h r-1xcajam r-ipm5af r-136ojw6 r-1hycxz"]{
     /* creates distance for home page's search bar */
     padding: 100px 0 0 20px !important;
-} div[class="css-175oi2r r-aqfbo4 r-gtdqiz r-1gn8etr r-1g40b8q"] div[class="css-175oi2r r-136ojw6"]{
+} [class="css-175oi2r r-136ojw6"]{
 	/* creates distance for explore page's search bar */
 	padding: 20px 0;
 } [class="css-175oi2r r-1e5uvyk r-ii8lfi"]>[class="css-175oi2r"]:has([placeholder="Search Bookmarks"]){
@@ -88,6 +89,9 @@ div{
 ,[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(button[aria-label~="Subscribe"]) /* Subscribe suggestions */
 ,[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"] /* RevisitYourBookmarks on timeline */
 ,.r-1dum35f.r-z2knda.r-1udh08x:has([aria-label="Who to follow"]) /* WhoToFollow list on profile that shows after following someone */
+,[data-testid="cellInnerDiv"]:has([data-testid*="follow"]) /* "WhoToFollow" on explore page */
+,[aria-label="Timeline: Explore"]>div>[data-testid="cellInnerDiv"]:has([class="css-175oi2r r-1adg3ll r-1ny4l3l"]) /* line separator on explore page */
+,[data-testid="cellInnerDiv"]:has([data-testid="previewInterstitial"]) /* useless tree-dot button on explore page */
 ,a[href="/jobs"] /* Jobs */
 ,[data-testid="analytics-preview"] /* analytics on profile */
 ,[aria-label^="Subscribe"] /* "Subscribe" (to someone else's twitter) button on (their) profile */
