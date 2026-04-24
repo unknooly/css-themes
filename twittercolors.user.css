@@ -2,7 +2,7 @@
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
 @updateURL		https://github.com/unknooly/css-themes/raw/main/twittercolors.user.css
-@version        1.1.0
+@version        1.1.1
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -229,6 +229,7 @@ div[class="css-146c3p1 r-bcqeeo r-qvutc0 r-1qd0xha r-q4m81j r-a023e6 r-rjixqe r-
 ,[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-1qd0xha r-a023e6 r-rjixqe r-16dba41 r-11f147o"] /* yet another "show more replies" button */
 ,[class="r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1gs4q39 r-10ptun7 r-1janqcz"] /* svg of visibiliy scope on posting button on main timeline */
 ,button[aria-label][role="button"]>div>span /* reply scope switcher while creating a post */
+,[class="css-1jxf684 r-dnmrzs r-1udh08x r-1udbk01 r-3s2u2q r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-n6v787 r-1cwl3u0"] /* "show original/translation" */
 {
 	color: bt !important;
 }
