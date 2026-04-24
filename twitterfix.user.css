@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.1.1
+@version        1.1.2
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -89,7 +89,7 @@ div{
 ,[class="css-175oi2r r-1mmae3n r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"]:has(button[aria-label~="Subscribe"]) /* Subscribe suggestions */
 ,[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"] /* RevisitYourBookmarks on timeline */
 ,.r-1dum35f.r-z2knda.r-1udh08x:has([aria-label="Who to follow"]) /* WhoToFollow list on profile that shows after following someone */
-,[data-testid="cellInnerDiv"]:has([data-testid*="follow"]) /* "WhoToFollow" on explore page */
+/*,[data-testid="cellInnerDiv"]:has([data-testid*="follow"])*/ /* "WhoToFollow" on explore page, but blocks Follower/Following lists visualization  */
 ,[aria-label="Timeline: Explore"]>div>[data-testid="cellInnerDiv"]:has([class="css-175oi2r r-1adg3ll r-1ny4l3l"]) /* line separator on explore page */
 ,a[href="/jobs"] /* Jobs */
 ,[data-testid="analytics-preview"] /* analytics on profile */
