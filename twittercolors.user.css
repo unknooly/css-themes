@@ -2,7 +2,7 @@
 @name           TwitterColors
 @namespace      https://github.com/unknooly/css-themes
 @updateURL		https://github.com/unknooly/css-themes/raw/main/twittercolors.user.css
-@version        1.1.2
+@version        1.1.3
 @description    Change color of Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 
@@ -14,14 +14,14 @@
 @var color bd "Borders" #2e2e2e
 @var color bt "Buttons and texts" #e699eb
 @var color bt2 "Buttons when hovered" #d659de
-@var color str "Text inside the buttons" black
-@var color str2 "Alternative text inside buttons" white
+@var color str "Text inside the buttons" #000000
+@var color str2 "Alternative text inside buttons" #ffffff
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://x.com") {
 
 /* main page little header >> section selector border-bottom */
-.css-175oi2r.r-xoduu5.r-1kihuf0.r-sdzlij.r-1p0dtai.r-hdaws3.r-s8bhmr.r-u8s1d.r-13qz1uu
+[class="css-g5y9jx r-xoduu5 r-1kihuf0 r-sdzlij r-1p0dtai r-hdaws3 r-s8bhmr r-u8s1d r-13qz1uu"]
 ,a[href="/messages/compose"][data-testid="empty_state_button_text"] /* "New message" button on dm*/
 ,[class*="r-l5o3uw"] /* menu item of reply scope while creating a post */
 {

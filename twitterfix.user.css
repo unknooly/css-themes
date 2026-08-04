@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.1.5
+@version        1.1.6
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -29,9 +29,9 @@
     margin: 0px !important;
 }
 
-[aria-label="Trending"]>div>[class="css-175oi2r"] /* line separator below search bar */
-,[class="css-175oi2r r-kemksi r-1kqtdi0 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x"] /* main elements */
-,[class="css-175oi2r r-18u37iz r-1w6e6rj r-3pj75a"] /* terms of service & stuff */
+[class="css-g5y9jx r-kemksi r-1kqtdi0 r-1867qdf r-1phboty r-rs99b7 r-1ifxtd0 r-1udh08x"] /* main elements */
+,[data-testid="whoToFollowSspAd"] /* line separator below search bar */
+,[class="css-g5y9jx r-1kqtdi0 r-1867qdf r-1phboty r-1ifxtd0 r-1udh08x r-1niwhzg r-1yadl64"] /* terms of service & stuff */
 ,[class="css-175oi2r r-vacyoi r-ttdzmv"]>[class="css-175oi2r r-1ifxtd0"] /* "Subscribe to Premium" ad */
 {
     /* removes right side bar */
@@ -43,7 +43,7 @@ div{
     transition-duration: 0ms !important;
 }
 
-[class="css-175oi2r r-1awozwy r-aqfbo4 r-kemksi r-18u37iz r-1h3ijdo r-6gpygo r-15ysp7h r-1xcajam r-ipm5af r-136ojw6 r-1hycxz"]{
+[aria-label="Trending"] [aria-label="Search"]{
     /* creates distance for home page's search bar */
     padding: 100px 0 0 20px !important;
 } [class="css-175oi2r r-136ojw6"]{
@@ -107,6 +107,7 @@ div{
 ,[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([src*="discount"]) /* premium ad (discount) */
 ,[href="/i/premium-business"] /* "Business" button */ 
 ,a[href*="/creators/studio"] /* "Creator Studio" */
+,[class="css-g5y9jx r-1q9bdsx r-1udh08x r-18u37iz r-1h0z5md"] /* "Access your post analytics" /
 
 /* Grok and AI */
 ,a[href="/i/grok"] /* Grok */
@@ -115,6 +116,7 @@ div{
 ,[class="css-175oi2r r-1s2bzr4 r-dnmrzs r-bnwqim"] /* AI buttons on tweet */
 ,[aria-label="Enhance your post with Grok"] /* button about the label, appears on top "post" section */
 ,[data-testid="GrokDrawer"] /* Grok button, similar to DMs button */
+,[aria-label="Grok actions"] /* Grok button on tweets */
 ,[class="css-175oi2r r-18u37iz r-1h0z5md"]:has([aria-label="Grok actions"]) /* "Explain this post" AI button */
 ,[aria-label="Profile Summary"] /* AI button on profile */
 ,[class="css-175oi2r r-dnmrzs r-nsbfu8"]:has([href*="premium"]) /* "You aren't verified yet" message on profile */
