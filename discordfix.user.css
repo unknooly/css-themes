@@ -2,7 +2,7 @@
 @name           DiscordFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/discordfix.user.css
-@version        1.1.2
+@version        1.1.3
 @description    Fix some stuff on Discord
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -60,11 +60,11 @@
 }
 
 /* PERSONAL OPTIONS */
-[class="footer__214dc"] /* "Discover" button (old settings UI) */
+[class*="listItem"]:has([aria-label="Discover"]) /* "Discover" button */
 ,[aria-label="Family Center"] /* family center (old settings UI) */
 ,[class*="vc-settings-donate"] /* donation request on plugin page */
 ,[class*="avatarDecoration"] /* avatar decorations */
-,[class*="nameplated"]>div:has([src*="https://cdn.discordapp.com/assets/collectibles/nameplates"]) /* nameplates */
+,[class*="nameplated"]>[class*="container"]:has([src*="collectibles-shop"]) /* nameplates */
 ,[class*="floatingBars"] /* new server's channel guide */
 ,[class*="channelNotice"] /* "This server requires members with moderation powers to have Multi-Factor Authentication." */
 ,[class*="helpMessageContainer"] /* help/tutorial messages */
