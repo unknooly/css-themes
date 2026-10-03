@@ -2,7 +2,7 @@
 @name           YoutubeFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/youtubefix.user.css
-@version        1.0.10
+@version        1.0.11
 @description    Fix some stuff on Youtube
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -23,6 +23,7 @@ ytd-guide-entry-renderer:has([title="Shorts"]) /* Shorts */
 ,[class="ytGridShelfViewModelHost ytd-item-section-renderer ytGridShelfViewModelHostHasBottomButton"] /* shorts on search page */
 ,[src*="https://www.gstatic.com/youtube/img/promos"]
 ,ytd-rich-item-renderer:has([class*="badge-style-type-members-only"]) /* featured video */
+,[class="style-scope ytd-item-section-renderer"]:has(>[class*="ytd-reel-shelf-renderer"]) /* shorts recommendations */
 {
     display: none !important;
 }
