@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.1.8
+@version        1.1.9
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -100,6 +100,7 @@ div{
 ,[class="css-175oi2r r-1adg3ll r-1ny4l3l"]:has([href="/explore"]) /* explore button that appears after trend stuff */
 ,[data-testid="trend"] /* some random trend stuff that appears on timeline */
 ,[role="tooltip"] /* tooltips */
+,[class="css-g5y9jx"]:has(>[class="css-g5y9jx r-1adg3ll r-1ny4l3l"]>* [href="https://www.tse.jus.br/eleicoes/eleicoes-2026"]) /* elections */
 
 /* ADS */
 ,[class$="css-175oi2r r-494qqr"]:has([href^="/i/premium_sign_up"]) /* GoAd-freeWithPremium+ tweet */
