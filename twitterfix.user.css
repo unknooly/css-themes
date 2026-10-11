@@ -2,7 +2,7 @@
 @name           TwitterFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/twitterfix.user.css
-@version        1.1.10
+@version        1.1.11
 @description    Fix some stuff on Twitter (X)
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -91,7 +91,7 @@ div{
 ,[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"] /* RevisitYourBookmarks on timeline */
 ,.r-1dum35f.r-z2knda.r-1udh08x:has([aria-label="Who to follow"]) /* WhoToFollow list on profile that shows after following someone */
 ,[data-testid="cellInnerDiv"]:has(h2[role="heading"]) /* "WhoToFollow" on timeline  */
-/*,[data-testid="cellInnerDiv"]:has([data-testid="UserCell"])*/ /* WhoToFollow recommended profiles, deactivated since it targets Followers/Following lists */
+,[class="css-g5y9jx"]:has(>div>div>[data-testid="UserCell"] [aria-label^="Follow "]) /* WhoToFollow recommended profiles */
 ,[data-testid="cellInnerDiv"]:has([class="css-g5y9jx r-l00any r-109y4c4 r-gu4em3"]) /* WhoToFollow line separator */
 ,[aria-label="Timeline: Explore"]>div>[data-testid="cellInnerDiv"]:has([class="css-175oi2r r-1adg3ll r-1ny4l3l"]) /* line separator on explore page */
 ,a[href="/jobs"] /* Jobs */
