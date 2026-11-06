@@ -2,7 +2,7 @@
 @name           DiscordFix
 @namespace      https://github.com/unknooly/css-themes
 @updateURL      https://github.com/unknooly/css-themes/raw/main/discordfix.user.css
-@version        1.1.3
+@version        1.2
 @description    Fix some stuff on Discord
 @author         Chaos (https://github.com/unknooly)
 ==/UserStyle== */
@@ -41,8 +41,8 @@
 ,[aria-label="Billing Settings"] /* Billing Settings */
 ,[class="header_b3f026"] /* billing settings (??) */
 /*,[class="separator_b3f026"]:nth-of-type(12)*/ /* separator of billing section (not working) */
-,[class="channel__972a0 container_e45859"]:has([href="/shop"]) /* Shop button on top of dms  (CHANGE) */
-,[class="channel__972a0 container_e45859"]:has([href="/store"]) /* Nitro button on top of dms (CHANGE) */
+,li:has(>div>[href="/shop"]) /* Shop button on top of dms */
+,div:has(>li>div>[href="/store"]) /* Nitro button on top of dms */
 ,[class="notice_be03aa colorPremiumTier2_be03aa colorPremium_be03aa"] /* "You have 3 days Nitro trial!" */
 ,[class*="floatingNitroUpsell"] /* nitro banner (inside profile editor) */
 ,div>div[class*="tryItOutSection"] /* nitro preview (inside profile editor) */
@@ -62,23 +62,24 @@
 /* PERSONAL OPTIONS */
 [class*="listItem"]:has([aria-label="Discover"]) /* "Discover" button */
 ,[aria-label="Family Center"] /* family center (old settings UI) */
-,[class*="vc-settings-donate"] /* donation request on plugin page */
 ,[class*="avatarDecoration"] /* avatar decorations */
 ,[class*="nameplated"]>[class*="container"]:has([src*="collectibles-shop"]) /* nameplates */
 ,[class*="floatingBars"] /* new server's channel guide */
 ,[class*="channelNotice"] /* "This server requires members with moderation powers to have Multi-Factor Authentication." */
 ,[class*="helpMessageContainer"] /* help/tutorial messages */
-,[class="_553bf02027ac2419-wrapper"]:has([href="/quest-home"]) /* Quests button on dm */
+,div:has(>li>div>[href="/quest-home"]) /* Quests button on dm */
 ,[class="_972a0d22c8afa7f0-channel e45859d60799ad7c-container"]:has([href="/shop"]) /* Shop  button on dm */
 ,[class="notice__6e2b9 colorBrand__6e2b9"] /* "How is blocking users working for you?" */
+,[class*="profileFrame"] /* profile frames */
 {
     display: none !important;
 }
 
 /* VENCORD OPTIONS */
 [class="vc-settings-quickActions-pill"]:has([class*="vc-restart-icon"]) /* "Relaunch Discord" (vencord) button */
-,[aria-label^="Click to react"],[aria-label^="Add Reaction"],[aria-label^="Reply"],[aria-label="Forward"],[aria-label="More"],[class="separator_f84418"],[class="separator_e986d9"] /* message buttons when hovering a message, only allowing the "raw" (vencord) button to stay */
+,[aria-label^="Click to react"],[aria-label^="Add Reaction"],[aria-label^="Reply"],[aria-label="Forward"],[aria-label="More"][class*="hoverBarButton"],[class="separator_f84418"],[class="separator_e986d9"] /* message buttons when hovering a message, only allowing the "raw" (vencord) button to stay */
 ,[class^="vc-special-card"] /* vencord ad */
+,[class*="vc-settings-donate"] /* donation request on plugin page */
 {
     display: none !important;
 }
